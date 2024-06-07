@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <!-- Search View -->
+        <record id='view_test_model_search' model='ir.ui.view'>
+            <field name='name'>test.model.search</field>
+            <field name='model'>test.model</field>
+            <field name='arch' type='xml'>
+                <search string='Test Model'>git 
+                    <filter name='operation_sum' string='Summ' domain="[('operation_type', '=', 'sum')]" />
+                    <filter name='operation_subtr' string='Subtracting' domain="[('operation_type', '=', 'subtr')]" />
+                    <filter name='operation_mult' string='Multiply' domain="[('operation_type', '=', 'mult')]" />
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
