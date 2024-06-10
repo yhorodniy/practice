@@ -6,10 +6,10 @@
             <field name='name'>test.model.search</field>
             <field name='model'>test.model</field>
             <field name='arch' type='xml'>
-                <search string='Test Model'>git 
-                    <filter name='operation_sum' string='Summ' domain="[('operation_type', '=', 'sum')]" />
-                    <filter name='operation_subtr' string='Subtracting' domain="[('operation_type', '=', 'subtr')]" />
-                    <filter name='operation_mult' string='Multiply' domain="[('operation_type', '=', 'mult')]" />
+                <search string='Test Model'>
+                    <filter name='sum_num' string='Summ' domain="[('operation_type', '=', 'sum')]" />
+                    <filter name='subtracting_num' string='Subtracting' domain="[('operation_type', '=', 'subtr')]" />
+                    <filter name='multiply_num' string='Multiply' domain="[('operation_type', '=', 'mult')]" />
                 </search>
             </field>
         </record>
