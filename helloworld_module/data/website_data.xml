@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <record id="data_website_hello_world" model="website">
+            <field name="name">website.name</field>
+            <field name="domain">domain.com</field>
+            <field name="logo">website.logo</field>
+        </record>
+    </data>
+</odoo>
