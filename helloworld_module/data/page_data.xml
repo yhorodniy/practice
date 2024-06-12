@@ -1,37 +1,12 @@
-<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="data_page_hello_world" model="website.page">
-        <field name="name">Page name</field>
-        <field name="url">Page URL</field>
-        <field name="website_indexed">Is Indexed</field>
-        <field name="is_in_menu">Is in menu</field>
-        <field name="is_seo_optimized">Seo optimized</field>
-        <field name="is_published">Is published</field>
-    </record>
-</odoo> -->
-
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <record id="mywebsite_homepage" model="website.page">
-        <field name="name">My Website Homepage</field>
-        <field name="url">/</field>
-        <field name="menu_id" ref="mywebsite_menu"/>
-        <field name="is_home" eval="True"/>
-        <field name="page_type">home</field>
-        <field name="content" type="html">
-            <h1>Welcome to My Website</h1>
-            <p>This is the homepage of my website.</p>
-        </field>
-    </record>
-
-    <record id="mywebsite_aboutpage" model="website.page">
-        <field name="name">My Website About Page</field>
-        <field name="url">/about</field>
-        <field name="menu_id" ref="mywebsite_menu"/>
-        <field name="page_type">about</field>
-        <field name="content" type="html">
-            <h1>About My Website</h1>
-            <p>This is the about page of my website.</p>
-        </field>
-    </record>
+    <data>
+        <!-- Default pages -->
+        <record id="aboutus_page" model="website.page">
+            <field name="url">/aboutus</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="helloworld_module.aboutus"/>
+            <field name="track">True</field>
+            <field name="website_meta_description">This is the about us page of the website</field>
+        </record>
+    </data>
 </odoo>

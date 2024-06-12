@@ -1,14 +1,16 @@
-<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="data_menu_hello_world" model="website.menu">
-        <field name="name">Menu</field>
-        <field name="url">Url</field>
-        <field name="page_id">Related Page</field>
-        <field name="controller_page_id">Related Model Page</field>
-        <field name="mega_menu_content">Mega menu</field>
-        <field name="parent_id">Parent Menu</field>
-        <field name="child_id">Child Menus</field>
-        <field name="new_window">New Window</field>
-        <field name="sequence">Sequence</field>
-    </record>
-</odoo> -->
+    <data>
+       <record id="main_menu" model="website.menu">
+          <field name="name">Default Main Menu</field>
+          <field name="url">/default-main-menu</field>
+          <field name="website_id" ref="helloworld_module.default_website"/>
+        </record>
+        <record id="menu_aboutus" model="website.menu">
+            <field name="name">About us</field>
+            <field name="url">/aboutus</field>
+            <field name="page_id" ref="helloworld_module.aboutus_page"/>
+            <field name="parent_id" ref="helloworld_module.main_menu"/>
+            <field name="sequence" type="int">30</field>
+        </record>
+    </data>
+</odoo>

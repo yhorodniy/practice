@@ -1,0 +1,67 @@
+<odoo>
+    <data>
+        <template id="aboutus" name="About Us">
+            <t t-call="website.layout">
+                <div id="wrap" >
+                    <div>
+                        <div style="position:absolute;top:5%;left:0;">
+                            <img loading="lazy" decoding="async" width="182" height="264" src="/helloworld_module/static/src/img/Union-4.svg" alt="" style="width:100%;height:145.05%;max-width:182px"/>
+                        </div>
+                        <section class="container">
+                            <div>
+                                <h1>
+                                    Про компанію ТОВ «ТуДу»
+                                </h1>
+                                <span />
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <div>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <h4>
+                                                    <span>
+                                                        Ми – молода та досвідчена команда IT фахівців, що знається на впровадженні бельгійської ERP-системи – Odoo, працюємо під брендом ТОВ “ТуДу”.
+                                                    </span>
+                                                </h4>
+                                                <div>
+                                                </div>
+                                                <h4>
+                                                    <span>
+                                                        Наша перевага у тому, що ми діємо як єдиний механізм, в якому кожен член команди має свою важливу роль.
+                                                    </span>
+                                                </h4>
+                                                <div>
+                                                </div>
+                                                <h4>
+                                                    <span>
+                                                        Завжди прагнемо привнести легкість та драйв в нашу роботу. Якщо ви шукаєте надійних та ефективних ІТ партнерів, ТОВ «ТуДу» – ваш вибір!»
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <img loading="lazy" decoding="async" width="940" height="540" src="/helloworld_module/static/src/img/it-team-todo_odoo-integrator-1.png" alt="" srcset="/helloworld_module/static/src/img/it-team-todo_odoo-integrator-1.png 940w, /helloworld_module/static/src/img/it-team-todo_odoo-integrator-1-300x172.png 300w, /helloworld_module/static/src/img/it-team-todo_odoo-integrator-1-768x441.png 768w" sizes="(max-width: 940px) 100vw, 940px" style="width:100%;height:57.45%;max-width:940px" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

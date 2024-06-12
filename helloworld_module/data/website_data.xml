@@ -1,9 +1,11 @@
 <odoo>
     <data>
-        <record id="data_website_hello_world" model="website">
-            <field name="name">website.name</field>
-            <field name="domain">domain.com</field>
-            <field name="logo">website.logo</field>
+        <!-- Default Website -->
+        <record id="default_website" model="website">
+            <field name="name">My Website</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="user_id" ref="base.public_user"/>
+            <field name="domain">www.helloworld.com:16069</field>
         </record>
     </data>
 </odoo>
