@@ -6,12 +6,17 @@
     'category': 'Website',
     'depends': ['website'],
     'data': [
+        'views/fourth_section_view.xml',
         'views/templates.xml',
-        # 'data/configurator_data.xml',
         'data/website_data.xml',
         'data/page_data.xml',
         'data/menu_data.xml',
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'helloworld_module/static/src/scss/style.scss'
+        ],
+    },
     'installable': True,
     'application': True,
     'auto_install': False,

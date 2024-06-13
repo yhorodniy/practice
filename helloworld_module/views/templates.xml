@@ -71,6 +71,7 @@
                                 </div>
                             </div>
                         </section>
+                        <t t-call="helloworld_module.fourth_section_view" />
                     </div>
                 </div>
             </t>
