@@ -7,71 +7,11 @@
                         <div style="position:absolute;top:5%;left:0;">
                             <img loading="lazy" decoding="async" width="182" height="264" src="/helloworld_module/static/src/img/Union-4.svg" alt="" style="width:100%;height:145.05%;max-width:182px"/>
                         </div>
-                        <section class="container d-flex justify-content-center" style="max-width:1500px">
-                            <div>
-                                <h1 class="text-center mt-5" style="font-size: 96px; font-weight:500">
-                                    Про компанію ТОВ «ТуДу»
-                                </h1>
-                                <div class="text-center" style="background-color:#FE5000;width:100px;height:1px;margin:45px auto" />
-                                <t tcall="website.s_text_image">
-                                    <div class="s_text_image o_mail_snippet_general">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-6 o_cc pt16 pb16">
-                                                <p class="lh-lg fs-5" style="color:#101820;font-weight:500">
-                                                    Ми – молода та досвідчена команда IT фахівців, що знається на впровадженні бельгійської ERP-системи – Odoo, працюємо під брендом ТОВ “ТуДу”.
-                                                </p>
-                                                <p class="lh-lg fs-5" style="color:#101820;font-weight:500">
-                                                    Наша перевага у тому, що ми діємо як єдиний механізм, в якому кожен член команди має свою важливу роль.
-                                                </p>
-                                                <p class="lh-lg fs-5" style="color:#101820;font-weight:500">
-                                                    Завжди прагнемо привнести легкість та драйв в нашу роботу. Якщо ви шукаєте надійних та ефективних ІТ партнерів, ТОВ «ТуДу» – ваш вибір!»
-                                                </p>
-                                            </div>
-                                            <div class="col-lg-6 px-0">
-                                                <img loading="lazy" decoding="async" width="940" height="540" src="/helloworld_module/static/src/img/it-team-todo_odoo-integrator-1.png" alt="" srcset="/helloworld_module/static/src/img/it-team-todo_odoo-integrator-1.png 940w, /helloworld_module/static/src/img/it-team-todo_odoo-integrator-1-300x172.png 300w, /helloworld_module/static/src/img/it-team-todo_odoo-integrator-1-768x441.png 768w" sizes="(max-width: 940px) 100vw, 940px" style="width: 100%; height: 100%; max-width: 940px;" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </t>
-                            </div>
-                        </section>
-                        <section>
-                        </section>
-                        <section class="position-relative pt-3 pb-5">
-                            <div style="position:absolute;top:200px;left:0;">
-                                <img loading="lazy" decoding="async" width="182" height="264" src="/helloworld_module/static/src/img/Union-4.svg" alt="" style="width:100%;height:145.05%;max-width:182px"/>
-                            </div>
-                            <div style="position:absolute;top:-61px;left:-50px;z-index=100;transform:scale(1.1)">
-                                <img loading="lazy" decoding="async" width="959" height="639" src="/helloworld_module/static/src/img/third_section_hand.svg" class="attachment-full size-full wp-image-1344" alt="" style="width:100%;height:66.63%;max-width:959px" />
-                            </div>
-                            <div>
-                                <h2 class="text-center mt-5" style="font-size: 50px; font-weight:500">
-                                    Ідея та мета
-                                </h2>
-                                <div class="text-center" style="background-color:#FE5000;width:100px;height:1px;margin:45px auto" />
-                                <div class="row align-items-center" style="margin-top:90px;">
-                                    <div class="col-lg-5">
-                                    </div>
-                                    <div class="col-lg-5"  style="padding-left:60px;">
-                                        <ul class="list-group gap-2">
-                                            <li style="background: url(/helloworld_module/static/src/img/list_dot.svg) no-repeat left top;background-position: left 12px;padding: 0px 0 1px 24px;list-style-type: none;">
-                                                <p class="lh-base" style="font-weight:500;font-size:23px">
-                                                    Ідея нашого бренду – швидко та просто автоматизовувати бізнес-процеси клієнта за допомогою лиш однієї платформи!
-                                                </p>
-                                            </li>
-                                            <li style="background: url(/helloworld_module/static/src/img/list_dot.svg) no-repeat left top;background-position: left 12px;padding: 0px 0 1px 24px;list-style-type: none;">
-                                                <p class="lh-base" style="font-weight:500;font-size:23px">
-                                                    Мета нашого бренду – підвищити ефективність бізнесів наших клієнтів, допомогти клієнтові зосередитись на своїх основних бізнес-задачах, шляхом оптимізації вже існуючих і створення нових бізнес-процесів.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-2">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        <t t-call="helloworld_module.first_section_view" />
+                        <t t-call="helloworld_module.second_section_view" />
+                        <t t-call="helloworld_module.third_section_view" />
                         <t t-call="helloworld_module.fourth_section_view" />
+                        <t t-call="helloworld_module.fifth_section_view" />
                     </div>
                 </div>
             </t>

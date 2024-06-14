@@ -1,0 +1,6 @@
+<odoo>
+    <template id="second_section_view">
+        <section>
+        </section>
+    </template>
+</odoo>
