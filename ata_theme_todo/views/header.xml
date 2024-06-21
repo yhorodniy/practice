@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="todo_header" inherit_id="website.layout" name="ToDo Header">
+        <xpath expr="//header" position="replace">
+            <header class="o_hoverable_dropdown o_header_disappears o_top_fixed_element">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a href="/" class="home-link">
+                            <img class="logo-h" src="/ata_theme_todo/static/src/img/elements/logo.svg"/>
+                        </a>
+                        <t t-call="website.navbar_toggler">
+                            <t t-set="_toggler_class" t-valuef="ms-auto"/>
+                        </t>
+
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse flex-grow-0">
+                            <t t-call="website.navbar_nav">
+                                <t t-set="_nav_class" t-valuef="mr-auto"/>
+                                <!-- Menu -->
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item"/>
+                                        <t t-set="link_class" t-valuef="nav-link"/>
+                                    </t>
+                                </t>
+                            </t>
+                        </div>
+
+                        <div class="d-none d-lg-block contact-header">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item phone">
+                                    <img class="phone" src="/ata_theme_todo/static/src/img/icons/phone.svg"/>
+                                    <a class="info" href="tel:+380738715313">
+                                        +38 073 871 53 13
+                                    </a>
+                                </li>
+                                <li class="nav-item" style="display: none;">
+                                    <t t-call="website.placeholder_header_call_to_action">
+                                        <t t-set="_div_classes" t-valuef="header-callback"/>
+                                     </t> 
+                                </li>
+                                <li>
+                                    <t name="User Sign In Placeholder" t-call="portal.placeholder_user_sign_in"/>
+                                    <t t-call="portal.user_dropdown"></t> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>

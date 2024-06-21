@@ -1,0 +1,11 @@
+<odoo>
+    <template id="helloworld_header" inherit_id="website.layout" name="Header">
+        <xpath expr="//header" position="replace">
+            <header>
+                <nav>
+                    Custom header for Helloworld website
+                </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>

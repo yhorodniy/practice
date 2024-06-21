@@ -11,6 +11,7 @@
         'views/third_section_view.xml',
         'views/fourth_section_view.xml',
         'views/fifth_section_view.xml',
+        'views/sixth_section_view.xml',
         'views/templates.xml',
         'data/website_data.xml',
         'data/page_data.xml',
@@ -18,6 +19,7 @@
     ],
     'assets': {
         'web.assets_frontend': [
+            'helloworld_module/static/src/scss/theme_style.scss',
             'helloworld_module/static/src/scss/style.scss',
             'helloworld_module/static/src/scss/accordion_style.scss',
             'helloworld_module/static/src/js/accordion.js',

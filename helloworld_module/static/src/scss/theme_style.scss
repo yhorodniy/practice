@@ -1,0 +1,16 @@
+$website-values: nth($o-website-values-palettes, 1);
+$color-palette-name: map-get($website-values, 'color-palettes-name');
+$font-name: map-get($website-values, 'font');
+
+$active-color-palette: map-get($o-theme-color-palettes, $color-palette-name);
+$active-font-family: map-get(map-get($o-theme-font-configs, $font-name), 'family');
+
+main {
+    font-family: $active-font-family;
+}
+
+h1 {
+    color: map-get($active-color-palette, 'gamma');
+    font-size: $o-theme-h1-font-size-multiplier * 1rem;
+    font-weight: $o-theme-headings-font-weight;
+}

@@ -6,8 +6,8 @@
           <field name="website_id" ref="helloworld_module.default_website"/>
         </record>
         <record id="menu_aboutus" model="website.menu">
-            <field name="name">About us</field>
-            <field name="url">/aboutus</field>
+            <field name="name">Home</field>
+            <field name="url">/</field>
             <field name="page_id" ref="helloworld_module.aboutus_page"/>
             <field name="parent_id" ref="helloworld_module.main_menu"/>
             <field name="sequence" type="int">30</field>
