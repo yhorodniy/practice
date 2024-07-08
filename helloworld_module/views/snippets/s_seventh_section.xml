@@ -1,0 +1,148 @@
+<odoo>
+    <template id="seventh_section_view">
+        <section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form">
+            <div class="container">
+
+                <!-- Працює -->
+                <!-- <form action="/website/form/" method="post" enctype="application/x-www-form-urlencoded" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/">
+                    <div class="s_website_form_dnone">
+                        <input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/>
+                    </div>
+                    <div>
+                        <label for="name">Subject</label>
+                        <input class="form-control s_website_form_input" type="text" name="name" required="1" data-fill-with="name" id="obij2aulqyau"/>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input class="form-control s_website_form_input" type="tel" name="phone" data-fill-with="phone" id="ozp7022vqhe"/>
+                    </div>
+                    <div>
+                        <label for="email_from">From</label>
+                        <input class="form-control s_website_form_input" type="email" name="email_from" required="" data-fill-with="email" id="oub62hlfgjwf"/>
+                    </div>
+                    <div>
+                        <label for="company">Company</label>
+                        <input class="form-control s_website_form_input" type="text" name="company" data-fill-with="commercial_company_name" id="o291di1too2s"/>
+                    </div> 
+                    <div>
+                        <label for="description">Message</label>
+                        <textarea class="form-control s_website_form_input" name="description" required="1" id="oyeqnysxh10b" rows="3" />
+                    </div>
+                    <button type="submit">Send</button>
+                </form> -->
+
+                <!-- Не працює -->
+                <!-- <form action="/submit/applicant/" method="post" enctype="application/x-www-form-urlencoded" data-model_name="hr.applicant">
+                    <div>
+                        <label for="name">Applicant Name</label>
+                        <input type="text" name="name" id="name" required="1" />
+                    </div>
+                    <div>
+                        <label for="email_from">Email</label>
+                        <input type="email" name="email_from" id="email_from" required="1" />
+                    </div>
+                    <div>
+                        <label for="partner_phone">Phone</label>
+                        <input type="tel" name="partner_phone" id="partner_phone" />
+                    </div>
+                    <div>
+                        <label for="job_id">Job Position</label>
+                        <select name="job_id" id="job_id" required="1">
+                            <t t-foreach="jobs" t-as="job">
+                                <option t-attf-value="{{ job['id'] }}">
+                                    <t t-esc="job['name']" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form> -->
+
+                <!-- Працює -->
+                <!-- <form action="/submit/partner/" method="post" enctype="application/x-www-form-urlencoded" data-model_name="res.partner" data-success-mode="redirect" data-success-page="/">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required="1" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required="1" />
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </div>
+                    <button type="submit">Create</button>
+                </form> -->
+
+                <!-- Не перевірив (потрібно платити) -->
+                <!-- <form action="/submit/ticket/" method="post" enctype="application/x-www-form-urlencoded" data-model_name="helpdesk.ticket" data-success-mode="redirect" data-success-page="/">
+                    <div>
+                        <label for="name">Ticket Title</label>
+                        <input type="text" name="name" id="name" required="1" />
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" required="1" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required="1" />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form> -->
+
+                <!-- Працює -->
+                <!-- <form action="/submit/lead/" method="post" enctype="application/x-www-form-urlencoded" data-model_name="crm.lead">
+                    <div>
+                        <label for="name">Lead Name</label>
+                        <input type="text" name="name" id="name" required="1" />
+                    </div>
+                    <div>
+                        <label for="contact_name">Contact Name</label>
+                        <input type="text" name="contact_name" id="contact_name" />
+                    </div>
+                    <div>
+                        <label for="email_from">Email</label>
+                        <input type="email" name="email_from" id="email_from" required="1" />
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </div>
+                    <button type="submit">Create</button>
+                </form> -->
+
+                <!-- <form action="/submit/project/" method="post" enctype="application/x-www-form-urlencoded" data-model_name="project.task">
+                    <div>
+                        <label for="name">Task Name</label>
+                        <input type="text" name="name" id="name" required="1" />
+                    </div>
+                    <div>
+                        <label for="project_id">Project</label>
+                        <select name="project_id" id="project_id" required="1">
+                            <t t-foreach="projects" t-as="project">
+                                <option t-attf-value="{{ project['id'] }}">
+                                    <t t-esc="project['name']" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" required="1" />
+                    </div>
+                    <button type="submit">Create</button>
+                </form> -->
+
+                <!-- <t t-foreach="jobs" t-as="job">
+                    <p>
+                        <a t-attf-href="/{{ slug(job) }}" >
+                            <t t-esc="job.name" />
+                        </a>
+                    </p>
+                </t> -->
+            </div>
+        </section>
+    </template>
+</odoo>

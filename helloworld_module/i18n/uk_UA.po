@@ -1,0 +1,302 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helloworld_module
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-03 07:14+0000\n"
+"PO-Revision-Date: 2024-07-03 07:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.first_section_view
+msgid "About LLC ToDo company"
+msgstr "Про компанію ТОВ «ТуДу»"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.first_section_view
+msgid ""
+"We are a young and experienced team of IT specialists who know how to "
+"implement the Belgian ERP system - Odoo, working under the brand of LLC "
+"\"ToDo\"."
+msgstr ""
+"Ми – молода та досвідчена команда IT фахівців, що знається на "
+"впровадженні бельгійської ERP-системи – Odoo, працюємо під "
+"брендом ТОВ “ТуДу”. "
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.first_section_view
+msgid ""
+"Our advantage is that we work as a single mechanism where each team member "
+"has an his own important role."
+msgstr ""
+"Наша перевага у тому, що ми діємо як єдиний механізм, в якому "
+"кожен член команди має свою важливу роль."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.first_section_view
+msgid ""
+"We always strive to bring lightness and drive to our work. If you are "
+"looking for reliable and effective IT partners, LLC ToDo is your choice!\""
+msgstr ""
+"Завжди прагнемо привнести легкість та драйв в нашу роботу. Якщо ви шукаєте  "
+"надійних та ефективних ІТ партнерів, ТОВ «ТуДу» – ваш вибір!»"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.third_section_view
+msgid "Our idea and purpose"
+msgstr "Ідея та мета"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.third_section_view
+msgid ""
+"The idea of ​​our brand is to quickly and easily automate the client's "
+"business processes using just one platform!"
+msgstr ""
+"Ідея нашого бренду – швидко та просто автоматизовувати бізнес-процеси "
+"клієнта за допомогою лиш однієї платформи!"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.third_section_view
+msgid ""
+"The goal of our brand is to increase the efficiency of our clients "
+"businesses, to help clients focus on their main business tasks, by "
+"optimizing existing and creating new business processes."
+msgstr ""
+"Мета нашого бренду – підвищити ефективність бізнесів наших клієнтів, "
+"допомогти клієнтові зосередитись на своїх основних бізнес-задачах, "
+"шляхом оптимізації вже існуючих і створення нових бізнес-процесів."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid "Services"
+msgstr "Послуги"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid "Оdoo"
+msgstr ""
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid ""
+"A full-fledged ERP system that will make your business more profitable. A "
+"lot of modules and useful integrations, a modern interface that supports "
+"many languages ​​- all this, and even more, you can find in Odoo!"
+msgstr ""
+"Повноцінна ERP система, що зробить ваш бізнес прибутковішим. Безліч "
+"модулів та корисних інтеграцій, сучасний інтерфейс, який підтримує безліч "
+"мов – все це, та навіть більше, ви можете знайти в Odoo!"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid "Web-development"
+msgstr "Веб-розробка"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid ""
+"An integral element in the development of any business, which becomes part "
+"of the strategy of attracting customers and making sales."
+msgstr ""
+"Невід’ємний елемент на шляху розвитку будь-якого бізнесу, що стає частиною "
+"стратегії залучення клієнтів і здійснення продажів."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid "Web-disign"
+msgstr "Веб-дизайн"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid ""
+"A good cover is indispensable in the digital space, you should be aware of "
+"the importance of web design as a tool necessary for the best presentation "
+"of your product to the end consumer."
+msgstr ""
+"Без гарної обкладинки в діджитал просторі не обійтися, ви маєте усвідомлювати "
+"важливість веб-дизайну як інструменту, необхідного для найкращої "
+"презентації вашого продукту кінцевому споживачеві."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid "Low-code/No-code"
+msgstr ""
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fourth_section_view
+msgid ""
+"A quick and easy way to implement any digital ideas, save time and money. "
+"All this is possible with our experienced team of specialists."
+msgstr ""
+"Швидкий та простий спосіб реалізовувати будь-які діджитал ідеї, зекономити "
+"час і гроші. Це все можливо з нашою досвідченою командою спеціалістів."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid "Cooperation"
+msgstr "Співпраця"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"<span>\n"
+"                                1\n"
+"                            </span> \n"
+"                            Outsourcing"
+msgstr ""
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"There is no need to hire a specialist - our team will take care of all your "
+"IT tasks."
+msgstr ""
+"Немає необхідності наймати в штат спеціаліста – наша команда візьме на себе "
+"всі ваші IT-завдання."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"<span>\n"
+"                                2\n"
+"                            </span> \n"
+"                            Outstaffing"
+msgstr ""
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"Our team will work exclusively on your project, you will be able to manage "
+"specialists, and our company will solve all problems."
+msgstr ""
+"Наша команда працюватиме виключно над вашим проєктом, ви зможете керувати "
+"фахівцями, а наша компанія вирішить всі проблеми."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"<span>\n"
+"                                3\n"
+"                            </span>"
+msgstr ""
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid "Turnkey project"
+msgstr "Проект під ключ"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"Get a guaranteed result in the stipulated time, with a pre-calculated cost, "
+"with minimal risks and maximum management by the Customer."
+msgstr ""
+"Отримайте гарантований результат в обумовлені терміни, із заздалегідь розрахованою "
+"вартістю, з мінімальними ризиками та максимальним менеджментом з боку Замовника."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"<span>\n"
+"                                4\n"
+"                            </span>\n"
+"                            Time &amp; materials"
+msgstr ""
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid ""
+"Ensuring a high-quality result in the specified time, with transparent "
+"pricing and the possibility of managing the scope of work."
+msgstr ""
+"Забезпечення якісного результату в зазначені терміни, з прозорим "
+"ціноутворенням і можливістю управління обсягами робіт."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid "Order a presentation"
+msgstr "Замовити презентацію"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.fifth_section_view
+msgid "Call back"
+msgstr "Перетелефонувати"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.sixth_section_view
+msgid "What problems does our business solve?"
+msgstr "Які проблеми вирішує наш бізнес"
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.sixth_section_view
+msgid ""
+"We help to get rid of manual collection and analysis of information. We are "
+"replacing it with fast and convenient management automation on a single "
+"platform."
+msgstr ""
+"Допомагаємо позбутися ручного збору та аналізу інформації. "
+"Замінюємо його на швидку та зручну автоматизацію управління "
+"на єдиній платформі."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.sixth_section_view
+msgid ""
+"We help to quickly obtain information about the real state of affairs in "
+"business, which allows you to make management decisions based on current "
+"data."
+msgstr ""
+"Допомагаємо швидко отримувати інформацію про реальний стан справ в "
+"бізнесі, що дозволяє приймати управлінські рішення на основі актуальних "
+"даних."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.sixth_section_view
+msgid ""
+"By automating business processes, we delegate them to the program, which "
+"eliminates time spent on manual execution."
+msgstr ""
+"Автоматизуючи бізнес-процеси ми делегуємо їх програмі, що нівелює витрати "
+"часу на ручне виконання."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.sixth_section_view
+msgid ""
+"Resource consumption, slowdown of activity and decrease in business "
+"efficiency - we are ready to offer solutions to all these problems."
+msgstr ""
+"Ресурсозатратність, уповільнення діяльності та зниження ефективності "
+"бізнесу – ми готові запропонувати рішення всіх цих проблем."
+
+#. module: helloworld_module
+#: model_terms:ir.ui.view,arch_db:helloworld_module.sixth_section_view
+msgid ""
+"Our solutions will provide you with timely control over employees, financial"
+" and operational activities of the business, will help to avoid difficulties"
+" in interaction between divisions."
+msgstr ""
+"Наші рішення забезпечать вам своєчасний контроль над співробітниками, "
+"фінансовою та операційною діяльністю бізнесу, допоможуть уникнути "
+"складностей у взаємодії між підрозділами."
+
+#. module: helloworld_module
+#: model:website.menu,name:helloworld_module.main_menu
+msgid "Default Main Menu"
+msgstr ""
+
+#. module: helloworld_module
+#: model:website.menu,name:helloworld_module.menu_aboutus
+msgid "Home"
+msgstr "Головна"
+
+#. module: helloworld_module
+#: model:ir.ui.view,website_meta_description:helloworld_module.aboutus
+msgid "This is the about us page of the website"
+msgstr ""

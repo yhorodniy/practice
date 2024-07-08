@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Outsourcing",
+        "descr": "There is no need to hire a specialist - our team will take care of all your IT tasks."
+    },
+    {
+        "id": 2,
+        "title": "Outstaffing",
+        "descr": "Our team will work exclusively on your project, you will be able to manage specialists, and our company will solve all problems."
+    },
+    {
+        "id": 3,
+        "title": "Turnkey project",
+        "descr": "Get a guaranteed result in the stipulated time, with a pre-calculated cost, with minimal risks and maximum management by the Customer."
+    },
+    {
+        "id": 4,
+        "title": "Time & materials",
+        "descr": "Ensuring a high-quality result in the specified time, with transparent pricing and the possibility of managing the scope of work."
+    }
+]

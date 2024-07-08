@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_custom_snippet" name="Custom snippet">
+        <section class="s_custom_snippet">
+            <div class="container">
+                <h3>Це новий Сніппет</h3>
+            </div>
+        </section>
+    </template>
+
+    <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
+        <xpath expr="//t[@id='default_snippets']" position="before">
+            <t id="theme_custom_snippets">
+                <div id="theme_custom_snippets_category" class="o_panel">
+                    <div class="o_panel_header">Theme</div>
+                    <div class="o_panel_body">
+                        <t t-snippet="snippets_library.s_custom_snippet" t-thumbnail="/snippets_library/src/img/test.png">
+                            <keywords>Snippet</keywords>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

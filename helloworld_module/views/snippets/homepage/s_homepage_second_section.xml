@@ -1,0 +1,17 @@
+<odoo>
+    <template id="s_homepage_second_section" inherit_id="website.s_text_block">
+
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="second-section-bg" separator=" " />
+        </xpath>
+        
+        <xpath expr="//div[@class='container s_allow_columns']" position="replace">
+            <div class="container s_allow_columns">
+                <p>
+                    Odoo — це модульна ERP система, що підтримує всі бізнес-процеси компанії в одному інтерфейсі, від CRM і WEB-магазину до управлінського обліку, рекрутингу та документообігу. Відкритий код системи дозволяє реалізувати будь-які ідеї замовника.
+                </p>
+            </div>
+        </xpath>
+
+    </template>
+</odoo>

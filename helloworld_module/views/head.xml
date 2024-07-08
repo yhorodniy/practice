@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="head_meta" inherit_id="website.layout">
+        <xpath expr="//head/title" position="replace">
+            <title> ToDo LLC </title>
+        </xpath>
+
+        <xpath expr="//head" position="inside">
+            <link rel="shortcut icon" type="image/x-icon" href="/helloworld_module/static/src/img/logo.png" />
+        </xpath>
+    </template> 
+</odoo>

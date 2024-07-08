@@ -1,4 +1,4 @@
-<odoo>
+<!-- <odoo>
     <data>
         <record id="feature_page_about_us" model="website.configurator.feature">
             <field name="name">About Us</field>
@@ -12,4 +12,4 @@
             <field name="feature_url">/about-us</field>
         </record>
     </data>
-</odoo>
+</odoo> -->

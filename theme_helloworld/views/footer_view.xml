@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <template id="helloworld_footer" inherit_id="website.layout" name="Footer">
-        <xpath expr="//footer" position="inside">
-            
-        </xpath>
-    </template>
-</odoo>

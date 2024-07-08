@@ -1,0 +1,48 @@
+<odoo>
+    <template id="s_sixth_section">
+        <section style="background-color:#F5F5F5;margin-bottom:70px;padding-top:70px">
+            <div class="container d-flex flex-column justify-content-center" style="max-width:1500px;">
+                <h2 class="text-center" style="font-size: 50px; font-weight:500">
+                    <!-- Які проблеми вирішує наш бізнес -->
+                    What problems does our business solve?
+                </h2>
+                <div class="text-center" style="background-color:#FE5000;width:100px;height:1px;margin:45px auto" />
+                <t tcall="website.s_text_image">
+                    <div class="s_text_image o_mail_snippet_general">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 o_cc pt16 pb16 gap-5 sixth_section_list">
+                                <p class="pe-5 sixth_section_list_item">
+                                    <!-- Допомагаємо позбутися ручного збору та аналізу інформації. Замінюємо його на швидку та зручну автоматизацію управління на єдиній платформі. -->
+                                    We help to get rid of manual collection and analysis of information. We are replacing it with fast and convenient management automation on a single platform.
+                                </p>
+                                <p class="pe-5 sixth_section_list_item">
+                                    <!-- Допомагаємо швидко отримувати інформацію про реальний стан справ в бізнесі, що дозволяє приймати управлінські рішення на основі актуальних даних. -->
+                                    We help to quickly obtain information about the real state of affairs in business, which allows you to make management decisions based on current data.
+                                </p>
+                                <p class="pe-5 sixth_section_list_item">
+                                    <!-- Автоматизуючи бізнес-процеси ми делегуємо їх програмі, що нівелює витрати часу на ручне виконання. -->
+                                    By automating business processes, we delegate them to the program, which eliminates time spent on manual execution.
+                                </p>
+                                <p class="pe-5 sixth_section_list_item">
+                                    <!-- Ресурсозатратність, уповільнення діяльності та зниження ефективності бізнесу – ми готові запропонувати рішення всіх цих проблем. -->
+                                    Resource consumption, slowdown of activity and decrease in business efficiency - we are ready to offer solutions to all these problems.
+                                </p>
+                                <p class="pe-5 sixth_section_list_item">
+                                    <!-- Наші рішення забезпечать вам своєчасний контроль над співробітниками, фінансовою та операційною діяльністю бізнесу, допоможуть уникнути складностей у взаємодії між підрозділами. -->
+                                    Our solutions will provide you with timely control over employees, financial and operational activities of the business, will help to avoid difficulties in interaction between divisions.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 px-0 position-relative">
+                                <div style="background-color:#FE5000;width:323px;height:323px;border-radius:50px;position:absolute;bottom:-46px;right:-46px;" />
+                                <!-- <img loading="lazy" decoding="async" width="323" height="323" src="https://todo.ltd/wp-content/uploads/2023/08/Rectangle-98.svg" class="attachment-full size-full wp-image-1129" alt="" style="width:100%;height:100%;max-width:323px;position:absolute;bottom:-36%;right:-6%;" /> -->
+                                 <div style="width:100%;height:100%;z-index:200;">
+                                    <img loading="lazy" decoding="async" width="100%" height="100%" src="/helloworld_module/static/src/img/sixth_section_logo.png" class="attachment-full size-full wp-image-1465" alt="" srcset="/helloworld_module/static/src/img/sixth_section_logo.png 692w, /helloworld_module/static/src/img/sixth_section_logo_251.png 251w" />
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </section>
+    </template>
+</odoo>

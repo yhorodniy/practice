@@ -5,4 +5,5 @@ class HelloWorld(models.Model):
     _name = 'helloworld.module'
     _description = 'Hello World Module'
 
-    title = fields.Char(string='Title', default='Hello World')
+    name = fields.Char(string='Section name', required=True)
+    properties_ids = fields.One2many('helloworld.property', 'module_id', string="Properties")

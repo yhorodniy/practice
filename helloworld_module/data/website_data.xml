@@ -5,7 +5,6 @@
             <field name="name">My Website</field>
             <field name="company_id" ref="base.main_company"/>
             <field name="user_id" ref="base.public_user"/>
-            <field name="domain">www.helloworld.com:16069</field>
         </record>
     </data>
 </odoo>
