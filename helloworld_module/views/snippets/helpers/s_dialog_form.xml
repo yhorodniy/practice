@@ -1,0 +1,103 @@
+<odoo>
+    <template id="s_dialog_form" name="Dialog form">
+        <div class="dialog_bg d-none" id="dialog_form">
+            <div class="dialog_form position-relative">
+                <form
+                    data-model_name="crm.lead"
+                    action="/website/form/"
+                    method="post"
+                    data-success-mode="redirect"
+                    data-success-page="/contactus-thank-you"
+                >
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <div class="row align-items-start justify-content-between gap-5">
+                        <div class="contacts-form col-lg-3 gap-5">
+                            <input type="text" placeholder="Ваше ім'я" />
+                            <input type="tel" placeholder="+38 (XXX) XXX-XX-XX" />
+                            <input type="email" placeholder="E-mail" />
+                            <textarea placeholder="Ваше запитання" />
+                        </div>
+                        <div class="col-lg-8 form-info-data">
+                            <div class="form-info-data-workers d-flex gap-5">
+                                <label for="workers">
+                                    <p>Кількість працівників: </p>
+                                </label>
+                                <input type="number" id="workers" />
+                            </div>
+                            <div class="form-checkbox-data">
+                                <div class="col-lg-6">
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="sales_id"/>
+                                        <label class="col-lg-9" for="sales_id">
+                                            <h5>Продажі та CRM</h5>
+                                            <p>Продажі, виставлення рахунків, підписки, оренда, CRM</p>
+                                        </label>
+                                    </div>
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="websites_id"/>
+                                        <label class="col-lg-9" for="websites_id">
+                                            <h5>Веб-сайт</h5>
+                                            <p>Веб-сайт, електронна комерція, форум</p>
+                                        </label>
+                                    </div>
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="hr_id"/>
+                                        <label class="col-lg-9" for="hr_id">
+                                            <h5>Відділ кадрів</h5>
+                                            <p>Відділ кадрів</p>
+                                        </label>
+                                    </div>
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="services_id"/>
+                                        <label class="col-lg-9" for="services_id">
+                                            <h5>Послуги</h5>
+                                            <p>Проекти, табелі, служба підтримки, планування</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="finance_id"/>
+                                        <label class="col-lg-9" for="finance_id">
+                                            <h5>Фінанси</h5>
+                                            <p>Витрати, консолідація бухгалтерського обліку</p>
+                                        </label>
+                                    </div>
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="logistic_id"/>
+                                        <label class="col-lg-9" for="logistic_id">
+                                            <h5>Логістика</h5>
+                                            <p>Закупівлі, інвентар</p>
+                                        </label>
+                                    </div>
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="seles_point_id"/>
+                                        <label class="col-lg-9" for="seles_point_id">
+                                            <h5>Торгова точка</h5>
+                                            <p>Магазин, ресторани</p>
+                                        </label>
+                                    </div>
+                                    <div class="row gap-5">
+                                        <input class="col-lg-2 align-self-center" type="checkbox" id="production_id"/>
+                                        <label class="col-lg-9" for="production_id">
+                                            <h5>Виробництво</h5>
+                                            <p>MRP, PLM, якість, технічне обслуговування</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button class="btn btn-primary mt-5" type="submit">Відправити</button>
+                    </div>
+                </form>
+                <button id="close-btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </div>
+        </div>
+    </template>
+</odoo>

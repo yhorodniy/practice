@@ -1,0 +1,37 @@
+.bg_contact_us_section {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    }
+
+    & span {
+        width: 100px;
+        height: 1px;
+        background-color: $main-color;
+        text-align: center;
+    }
+
+    & input, & textarea {
+        width: 70%;
+        max-width: 475px;
+        max-height: 170px;
+        background-color: $secondary-bg-color;
+        border: 1px solid transparent;
+        border-radius: $card-img-border-radius;
+        padding: 5px 10px;
+
+        &::placeholder {
+            color: $dark-gray;
+            font-size: $fsz-footer-contacts;
+        }
+    }
+}

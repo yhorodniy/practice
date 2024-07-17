@@ -1,0 +1,43 @@
+<odoo>
+
+    <template id="s_homepage_seventh_section">
+        <section class="container">
+            <div class="s_title pt40 pb40" data-vcss="001">
+                <div class="s_allow_columns">
+                    <h2 class="display-4-fs" style="text-align: center;">Клієнти</h2>
+                </div>
+            </div>
+            <section>
+
+                <div class="seventh_section-carousel">
+                    <div class="carousel-container">
+                        <button class="carousel-button prev" onclick="prevSlide()">‹</button>
+                        <div class="carousel-wrapper">
+                            <t t-foreach="clients_list" t-as="client_item">
+                                <div class="carousel-slide">
+                                    <object
+                                        t-if="client_item['img'].split('.')[-1] == 'svg'" 
+                                        t-att-data="client_item['img']" 
+                                        type="image/svg+xml" 
+                                        class="svg-img"
+                                    />
+                                    <img t-else="" t-att-src="client_item['img']" t-att-alt="client_item['name']" />
+                                </div>
+                            </t>
+                        </div>
+                        <button class="carousel-button next" onclick="nextSlide()">›</button>
+                    </div>
+                    <div class="carousel-description-wrapper">
+                        <t t-foreach="clients_list" t-as="client_item">
+                            <div class="carousel-description">
+                                <t t-esc="client_item['descr']" />
+                            </div>
+                        </t>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </template>
+
+</odoo>

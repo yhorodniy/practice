@@ -1,68 +1,83 @@
-.carousel-item {
-    position: relative;
+* {
+    box-sizing: border-box;
+}
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+input[type='checkbox'] {
+    &:checked {
+        color: $main-color;
     }
 }
 
-.btn-primary {
-    color: #FFFFFF;
-    background-color: #FE5000;
-    border-radius: 30px;
-    border: none;
+h2 {
+    font-size: $fsz-sub-title;
+    font-weight: $fw-semi-bold;
+    line-height: 2.5rem; 
+}
+
+h3 {
+    font-size: $fsz-sub;
+    font-weight: $fw-regular;
+    line-height: 2.75rem; 
+}
+
+h4 {
+    font-weight: $fw-regular;
+    margin-bottom: 50px;
+    line-height: 2.5rem; 
+}
+
+:root {
+    --body-font-size: 1.25rem;
+}
+
+.row {
+    --gutter-x: 0;
+    --gutter-y: 0;
+}
+
+.secondary-bg-color {
+    background-color: $secondary-bg-color;
+}
+
+.fill-bg-color {
+    background-color: $main-color;
+}
+
+.main-title-color {
+    color: $main-color
+}
+
+.btn-primary, .btn-primary:focus {
+    color: $white;
+    background-color: $main-color;
+    box-shadow: none;
+    border-radius: $bnt-border-radius;
+    border: 1px solid $main-color;
     transition: all .3s;
+    padding: 10px 40px;
+    width: max-content;
 
     &:hover {
-    color: #000000;
-    background-color: #ffffff;
+        color: $black;
+        background-color: $white;
+    }
+
+    &:active {
+        color: $white;
+        box-shadow: none;
+        background-color: $black;
     }
 }
 
-.s_carousel.s_carousel_default .carousel-indicators {
-    margin-bottom: 10rem;
-    
-    & li {
-        height: 10px;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-    & [data-bs-target] {
-        background-color: #ffffff;
-        width: 10px;
-        transition: all .3s;
-        
-        &.active {
-            background-color: #FE5000;
-        }
-    }
+.line-100 {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: $main-color;
 }
 
-.second-section-bg {
-    position: relative;
-    margin-top: -50px;
-    background-color: #FE5000;
-    border-radius: 50px 50px 0 0;
-
-    & p {
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 28px;
-        text-align: left;
+@media (min-width: 1650px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1596px;
     }
-}
-
-.hw-third-section {
-    max-width: 1370px;
-
-    & img {
-        height: 100px;
-    }
-}
+  }

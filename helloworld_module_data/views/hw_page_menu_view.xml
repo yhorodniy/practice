@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <!-- Action -->
+        <record id='action_hw_page' model='ir.actions.act_window'>
+            <field name='name'>Hwllo World Pages</field>
+            <field name='res_model'>hw.page</field>
+            <field name='view_mode'>kanban,tree,form</field>
+        </record>
+
+        <!-- Menu Item -->
+        <menuitem id='menu_test' name='Pages' action='action_hw_page' />
+        <!-- <menuitem id='menu_test_model' name='Pages' parent='menu_test' action='action_hw_page' /> -->
+    </data>
+</odoo>

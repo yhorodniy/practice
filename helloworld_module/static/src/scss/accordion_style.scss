@@ -1,3 +1,5 @@
+@import './variables';
+
 .fifth_section_accordion {
     margin: 0 auto;
     max-width: 620px;
@@ -6,27 +8,27 @@
     
 .fifth_section_accordion_item {
     position: relative;
-    border-radius: 20px;
-    background: #FEFEFE;
+    border-radius: $bnt-border-radius;
+    background: $white;
     box-shadow: 0px 4px 4px 0px rgba(16, 24, 32, 0.25);
     margin: 34px 0;
     padding: 0 5px 15px 50px;
-    color: #fe5000;
+    color: $main-color;
     transition: all 0.3s ease-out;
 
     & i {
         position:absolute;
         top:20px;
         right:20px;
-        color: black;
-        font-size: 24px;
+        color: $black;
+        font-size: $fsz-key-text;
         transition: all 0.3s ease-out;
     }
 }
 
 .fifth_section_accordion_header {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: $fsz-sub;
+    font-weight: $fw-bold;
     padding: 25px;
     cursor: pointer;
     user-select: none;
@@ -37,19 +39,19 @@
     max-height: 0;
     overflow: hidden;
     padding: 0 15px;
-    color: #ffffff;
+    color: $white;
     transition: all 0.3s ease-out;
 }   
 
 .fifth_section_accordion_item.open {
-    border: 1px solid #d5d8dc;
+    border: 1px solid $ligh-gray;
     box-shadow: none;
-    background-color: black;
-    color: #ffffff;
+    background-color: $black;
+    color: $white;
 
     & i {
         transform: rotateZ(45deg);
-        color: #ffffff;
+        color: $white;
     }
 
     & .fifth_section_accordion_content {
@@ -59,49 +61,40 @@
 }
 
 .fifth_section_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexcenter();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     gap: 200px;
     margin-top: 100px;
 
     & button {
         font-family: "Roboto", Sans-serif;
-        font-size: 24px;
-        font-weight: 500;
+        font-size: $fsz-key-text;
+        font-weight: $fw-medium;
         border: 2px solid #fe5000;
-        border-radius: 50px;
+        border-radius: $background-border-radius;
         padding: 18px 24px;
         transition: all 0.3s;
     }
 
     & .presentation_btn {
-        color: #ffffff;
-        background-color: #fe5000;
+        color: $white;
+        background-color: $main-color;
 
         &:hover {
-            color: #fe5000;
-            background-color: #ffffff;
+            color: $main-color;
+            background-color: $white;
         }
     }
     
     & .callback_btn {
-        color: #fe5000;
-        background-color: #ffffff;
+        color: $main-color;
+        background-color: $white;
 
         &:hover {
-            color: #ffffff;
-            background-color: #fe5000;
+            color: $white;
+            background-color: $main-color;
         }
     }
 }
-
-// .presentation_btn:hover ~ .callback_btn {
-//     color: #ffffff;
-//     background-color: #fe5000;
-// }
-
-// .callback_btn:hover ~ .presentation_btn {
-//     color: #fe5000;
-//     background-color: #ffffff;
-// }

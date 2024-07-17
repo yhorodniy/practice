@@ -1,6 +1,372 @@
+
+// First section
+
 .hw_mainpage_carousel {
 
     & h2, p {
         color: #ffffff;
     };
 };
+
+.carousel-item {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    }
+
+    & .container {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+}
+
+.s_carousel.s_carousel_default .carousel-indicators {
+    margin-bottom: 10rem;
+    
+    & li {
+        height: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    & [data-bs-target] {
+        background-color: $white;
+        width: 10px;
+        transition: all .3s;
+        
+        &.active {
+            background-color: $main-color;
+        }
+    }
+}
+
+
+// Second section
+
+.second-section-bg {
+    position: relative;
+    margin-top: -50px;
+    background-color: $main-color;
+    border-radius: $background-border-radius $background-border-radius 0 0;
+
+    & p {
+        color: $white;
+        font-size: $fsz-key-text;
+        $fw-medium: 500;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+
+
+// Fourth section
+
+.fourth-section-bg {
+    background-color: $main-color;
+    padding: 70px 0 130px 0;
+}
+
+.fourth-section-wrapper {
+    @include flexcenter($justify-content: space-between);
+
+    & h2 {
+        color: $white;
+    }
+
+    & .items-list-wrapper {
+        @include flexcenter($align-atems: flex-start);
+        gap: 30px;
+
+        & .items-list-column {
+            @include flexcenter($flex-direction: column);
+            gap: 70px;
+
+            & .item-wrapper {
+                width: 260px;
+                padding: 30px 15px;
+                background-color: $white;
+                border-radius: $card-border-radius;
+
+
+                & .img-wrapper {
+                    padding: 10px;
+                    background-color: $black;
+                    margin:-55px 0 10px 10px;
+                    width: max-content;
+                    border-radius: $card-img-border-radius;
+                }
+
+                & h4 {
+                    color: $main-color;
+                    font-size: $fsz-key-text;
+                    font-weight: $fw-bold;
+                    text-align: center;
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Fifth section
+
+.fifth-section-bg {
+    position: relative;
+    margin-top: -50px;
+    background-color: $black;
+    border-radius: $background-border-radius $background-border-radius 0 0;
+
+    & h3 {
+        color: $white;
+        // font-size: $fsz-key-text;
+        // $fw-medium: 500;
+        // line-height: 28px;
+        text-align: left;
+    }
+}
+
+
+// Sixth section
+
+.sixth_section_items_wrapper {
+    height: 100%;
+    margin-top: 30px;
+    opacity: 1;
+    transition: all .3s;
+    
+    & .sixth_section_item {
+        position: relative;
+        height: 560px;
+        transition: .3s;
+
+        &:nth-child(1), &:nth-child(1) div {
+            border-radius: $background-border-radius 0 0 0;
+        }
+        &:nth-child(2), &:nth-child(2) div {
+            border-radius: 0 $background-border-radius 0 0;
+        }
+        &:nth-child(3), &:nth-child(3) div {
+            border-radius: 0 0 0 $background-border-radius;
+        }
+        &:nth-child(4), &:nth-child(4) div {
+            border-radius: 0 0 $background-border-radius 0;
+        }
+    
+        & div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 100px;
+            color: $white;
+            background-color: rgba(0, 0, 0, 0.8);
+            gap: 50px;
+            opacity: 0;
+            transition: all 0.3s;
+            @include flexcenter($flex-direction:column);
+    
+            & h5 {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            & button {
+                background-color: rgba(0, 0, 0, 0);
+                border: none;
+                color: $white;
+            }
+
+        }
+        &:hover div {
+            opacity: 1;
+        }
+    }
+}
+
+.hiden_content {
+    display: none;
+    height: 0;
+    opacity: 0;
+}
+
+
+// Seventh section
+
+.seventh_section-carousel {
+    position: relative;
+    width: 100%;
+    @include flexcenter($flex-direction: column);
+
+    & .carousel-container {
+        width: 100%;
+        position: relative;
+        margin: 2rem auto;
+        overflow: hidden;
+
+        & button {
+            z-index: 1000;
+        }
+    }
+    
+    & .carousel-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    & .carousel-slide {
+        min-width: 20%;
+        transition: transform 0.5s ease-in-out;
+        opacity: 0.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: 100px;
+    }
+    
+    & .carousel-slide.active {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    // & .carousel-slide div {
+    //     margin: 0;
+    //     text-align: center;
+    // }
+    
+    .carousel-slide img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    & .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    & .carousel-button.prev {
+        left: 0;
+    }
+    
+    & .carousel-button.next {
+        right: 0;
+    }
+}
+
+.carousel-description-wrapper {
+    margin: 2rem auto;
+    width: 70%; 
+
+    & .carousel-description {
+        display: none;
+        opacity: 0;
+        width: 60%;
+
+        &.active {
+            animation: slide-left 0.3s;
+            opacity: 1;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+ @keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  
+// Eighth section
+
+.eighth_section_content {
+
+    & .eighth_section_image_content {
+
+        & .carousel {
+            // top: 0;
+            // left: 0;
+            // width: 100%;
+            height: 100%;
+
+            & .eighth_section_image_content_carousel_images {
+
+                
+                & img {
+                    display: none;
+                    width: 80%;
+                    border-radius: $card-border-radius;
+
+                    &.active {
+                        display: inline;
+                    }
+                }
+            }
+
+            & .eighth_section_image_content_carousel_names {
+                position: absolute;
+                top: 40%;
+                left: 10%;
+
+                & .carousel_name_wrapper {
+                    background-color: $white;
+                    border-radius: 0 $card-border-radius;
+                    max-width: 40%;
+                    display: none;
+
+                    & .carousel_name {
+                        height: 45px;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+
+            & .eighth_section_image_content_carousel_indicators {
+                margin-top: 2.5rem;
+                @include flexcenter();
+                gap: 14px;
+
+                & .carousel_indicator {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: rgba(0,0,0,0.67);
+                    transition: all .3s;
+
+                    &:hover, &.active {
+                        background: $main-color;
+                    }
+                }
+            }
+        }
+    } 
+}

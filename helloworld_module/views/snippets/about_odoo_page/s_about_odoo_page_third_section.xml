@@ -1,0 +1,54 @@
+<odoo>
+    <template id="s_about_odoo_page_third_section">
+
+        <section class="s_call_to_action o_cc pt48 pb24">
+
+            <div style="position:absolute;top:20px;left:0;z-index:100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="182" height="264" viewBox="0 0 182 264" fill="none">
+                    <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M98.7887 -1.72728e-05C116.209 -2.03186e-05 116.236 29.2581 98.7887 29.2581L0.000809717 29.2581L0.000802235 9.78547e-06L98.7887 -1.72728e-05ZM0.000575321 87.7787L168.925 87.7787C186.372 87.7787 186.345 58.5206 168.925 58.5206L0.000567839 58.5207L0.000575321 87.7787ZM119.864 117.037C137.283 117.037 137.311 146.295 119.864 146.295L2.90939e-05 146.295L2.04634e-05 117.037L119.864 117.037ZM145.686 175.556C163.105 175.556 163.136 204.814 145.686 204.814L0.00169753 204.814L0.00169005 175.556L145.686 175.556ZM104.718 263.333C122.168 263.333 122.138 234.075 104.718 234.075L0.000638519 234.075L0.000646001 263.333L104.718 263.333Z" fill="#FE5000" stroke=""/>
+                </svg>
+            </div>
+            <div class="container text-center about_odoo_advantage">
+                <h2 class="my-5">Переваги системи</h2>
+                <span class="line-100 mx-auto mb72" />
+                <div class="odoo_advantages_list">
+                    <t t-foreach="advantages_list[0]" t-as="advantages_item">
+                        <div class="odoo_advantages_item">
+                            <h4>
+                                <t t-esc="advantages_item['title']" />
+                            </h4>
+                            <p>
+                                <t t-esc="advantages_item['descr']" />
+                            </p>
+                        </div>
+                    </t>
+                </div>
+                <div id="advantages_hiden_content" class="odoo_advantages_list mt-5 d-none">
+                    <t t-foreach="advantages_list[1]" t-as="advantages_item">
+                        <div class="odoo_advantages_item">
+                            <h4>
+                                <t t-esc="advantages_item['title']" />
+                            </h4>
+                            <p>
+                                <t t-esc="advantages_item['descr']" />
+                            </p>
+                        </div>
+                    </t>
+                </div>
+                <div class="text-center my-4">
+                    <button id="advantages_show_more_btn" class="btn btn-primary">ПОКАЗАТИ ВСІ КЕЙСИ...</button>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <p class="col-lg-3">
+                        <button id="get-demo-btn" class="btn btn-primary">Отримати демо</button>
+                    </p>
+                    <p class="col-lg-4">
+                        <button id="get-presentation-btn" class="btn btn-primary">Замовити презентацію</button>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </template>
+</odoo>

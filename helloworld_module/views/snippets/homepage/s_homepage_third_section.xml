@@ -1,103 +1,114 @@
 <odoo>
-    <template id="s_homepage_third_section" inherit_id="website.s_title">
-        <xpath expr="//h2" position="replace">
-            <h2 class="display-4-fs" style="text-align: center;">Всі бізнес-процеси в одній системі!</h2>
-        </xpath>
-    </template>
     
-    <template id="homepage_third_section_view">
-        <section class="container text-center hw-third-section">
-            <div class="row justify-content-center">
-                <div class="row col-lg-4">
-                    <h4 style="margin-bottom:2.5rem">Прискорте продажі</h4>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_1.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">CRM</h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_2.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">Точка продажу</h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_3.svg" alt="Продажі" />
-                        <h5 style="margin-top:1.5rem">Продажі</h5>
-                    </div>
-                </div>
-                <div class="row col-lg-4">
-                    <h4 style="margin-bottom:2.5rem">Інтегруйте послуги</h4>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_4.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">Проект</h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_5.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">Табель</h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_6.svg" alt="Продажі" />
-                        <h5 style="margin-top:1.5rem">Служба підтримки</h5>
-                    </div>
-                </div>
-                <div class="row col-lg-4">
-                    <h4 style="margin-bottom:2.5rem">Оптимізуйте операції</h4>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_7.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">Склад</h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_8.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">MRP</h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_9.svg" alt="Продажі" />
-                        <h5 style="margin-top:1.5rem">Купівлі</h5>
-                    </div>
-                </div>
+    <template id="s_homepage_third_section">
+        <section>
+            <div id="absolute_img" style="position:absolute;top:10px;right:0;transform:rotate(180deg);z-index:100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="182" height="264" viewBox="0 0 182 264" fill="none">
+                    <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M98.7887 -1.72728e-05C116.209 -2.03186e-05 116.236 29.2581 98.7887 29.2581L0.000809717 29.2581L0.000802235 9.78547e-06L98.7887 -1.72728e-05ZM0.000575321 87.7787L168.925 87.7787C186.372 87.7787 186.345 58.5206 168.925 58.5206L0.000567839 58.5207L0.000575321 87.7787ZM119.864 117.037C137.283 117.037 137.311 146.295 119.864 146.295L2.90939e-05 146.295L2.04634e-05 117.037L119.864 117.037ZM145.686 175.556C163.105 175.556 163.136 204.814 145.686 204.814L0.00169753 204.814L0.00169005 175.556L145.686 175.556ZM104.718 263.333C122.168 263.333 122.138 234.075 104.718 234.075L0.000638519 234.075L0.000646001 263.333L104.718 263.333Z" fill="#FE5000" stroke=""/>
+                </svg>
             </div>
-            <div class="row justify-content-center mt-5">
-                <div class="row col-lg-3">
-                    <h4 style="margin-bottom:2.5rem">Створюйте веб-сайти</h4>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_10.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">Конструктор веб-сайту</h5>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_11.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">Електронна комерція</h5>
+            <div class="container text-center pb-5">
+                <div class="s_title pt40 pb40" data-vcss="001">
+                    <div class="container s_allow_columns">
+                        <h2 class="display-4-fs" style="text-align: center;">Всі бізнес-процеси в одній системі!</h2>
                     </div>
                 </div>
-                <div class="row col-lg-3">
-                    <h4 style="margin-bottom:2.5rem">Керуйте фінансами</h4>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_12.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">Виставлення рахунку</h5>
+                <div class="row justify-content-center">
+                    <div class="row col-lg-4">
+                        <h4 style="margin-bottom:2.5rem">Прискорте ваші продажі</h4>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_1.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">CRM</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_2.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">Точка продажу</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_3.svg" alt="Продажі" height="100px" />
+                            <h5 style="margin-top:1.5rem">Продажі</h5>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_13.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">Бухоблік</h5>
+                    <div class="row col-lg-4">
+                        <h4 style="margin-bottom:2.5rem">Інтегруйте ваші послуги</h4>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_4.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">Проект</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_5.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">Табель</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_6.svg" alt="Продажі" height="100px" />
+                            <h5 style="margin-top:1.5rem">Служба підтримки</h5>
+                        </div>
+                    </div>
+                    <div class="row col-lg-4">
+                        <h4 style="margin-bottom:2.5rem">Оптимізуйте ваші операції</h4>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_7.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">Склад</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_8.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">MRP</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_9.svg" alt="Продажі" height="100px" />
+                            <h5 style="margin-top:1.5rem">Купівлі</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="row col-lg-3">
-                    <h4 style="margin-bottom:2.5rem">Покращіть маркетинг</h4>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_14.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">Email- маркетинг</h5>
+                <div class="row justify-content-center mt-5">
+                    <div class="row col-lg-3">
+                        <h4 style="margin-bottom:2.5rem">Створюйте особливі веб-сайти</h4>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_10.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">Конструктор веб-сайту</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_11.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">Електронна комерція</h5>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_15.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">Автоматизація маркетингу</h5>
+                    <div class="row col-lg-3">
+                        <h4 style="margin-bottom:2.5rem">Керуйте вашими фінансами</h4>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_12.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">Виставлення рахунку</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_13.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">Бухоблік</h5>
+                        </div>
+                    </div>
+                    <div class="row col-lg-3">
+                        <h4 style="margin-bottom:2.5rem">Покращіть ваш маркетинг</h4>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_14.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">Email- маркетинг</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_15.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">Автоматизація маркетингу</h5>
+                        </div>
+                    </div>
+                    <div class="row col-lg-3">
+                        <h4 style="margin-bottom:2.5rem">Налаштування та розробка</h4>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_16.svg" alt="CRM" height="100px" />
+                            <h5 style="margin-top:1.5rem">Студія</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="/helloworld_module/static/src/img/main_page/third_section/third_section_17.svg" alt="Точка продажу" height="100px" />
+                            <h5 style="margin-top:1.5rem">odoo.sh</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="row col-lg-3">
-                    <h4 style="margin-bottom:2.5rem">Налаштуйте розробку</h4>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_16.svg" alt="CRM" />
-                        <h5 style="margin-top:1.5rem">Студія</h5>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="/helloworld_module/static/src/img/main_page/third_section_17.svg" alt="Точка продажу" />
-                        <h5 style="margin-top:1.5rem">odoo.sh</h5>
-                    </div>
+                <div class="row justify-content-center mt-5">
+                    <p class="col-lg-3"> <a href="/modules" class="btn btn-primary">Більше модулів</a> </p>
+                    <p class="col-lg-4"> <button id="get-presentation-btn" class="btn btn-primary">Замовити презентацію</button> </p>
                 </div>
             </div>
         </section>

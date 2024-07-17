@@ -1,0 +1,16 @@
+<odoo>
+
+    <template id="s_about_odoo_page_eighth_section">
+        <section>
+
+            <div t-att-style="'background-color: #101820;'" class="bg_contact_us_section eighth_section_contact-us">
+                <img src="/helloworld_module/static/src/img/about_odoo_page/eighth_section/bg_img.png" />
+                <img src="/helloworld_module/static/src/img/about_odoo_page/eighth_section/bg_svg.svg" />
+                <t t-call="helloworld_module.s_contact_us_section" />
+                <div class="eighth_section_contact-us-line" />
+            </div>
+            
+        </section>
+    </template>
+
+</odoo>

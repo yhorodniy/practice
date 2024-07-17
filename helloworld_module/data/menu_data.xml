@@ -1,16 +1,25 @@
 <odoo>
     <data>
-       <record id="main_menu" model="website.menu">
-          <field name="name">Default Main Menu</field>
-          <field name="url">/default-main-menu</field>
-          <field name="website_id" ref="helloworld_module.default_website"/>
+
+        <!-- <record id="main_menu" model="website.menu">
+            <field name="name">Default Main Menu</field>
+            <field name="url">/default-main-menu</field>
+            <field name="website_id" ref="helloworld_module.default_website"/>
         </record>
-        <record id="menu_aboutus" model="website.menu">
+
+        <record id="menu_homepage" model="website.menu">
             <field name="name">Home</field>
             <field name="url">/</field>
-            <field name="page_id" ref="helloworld_module.aboutus_page"/>
+            <field name="page_id" ref="helloworld_module.y_h_hw_homepage"/>
             <field name="parent_id" ref="helloworld_module.main_menu"/>
-            <field name="sequence" type="int">30</field>
-        </record>
+        </record> -->
+
+        <!-- <record id="menu_aboutus" model="website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/aboutus</field>
+            <field name="page_id" ref="helloworld_module.about_us_page"/>
+            <field name="parent_id" ref="helloworld_module.main_menu"/>
+        </record> -->
+
     </data>
 </odoo>

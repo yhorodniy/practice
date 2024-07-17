@@ -6,7 +6,26 @@
         </xpath>
 
         <xpath expr="//head" position="inside">
+
             <link rel="shortcut icon" type="image/x-icon" href="/helloworld_module/static/src/img/logo.png" />
+            <script type="text/javascript" src="/helloworld_module/static/src/js/helpers.js"></script>
+
         </xpath>
+
+        <xpath expr="//main" position="inside">
+
+            <t t-call="helloworld_module.s_dialog_form" />
+            <t t-call="helloworld_module.s_contact_modal_form" />
+
+        </xpath>
+
+        <!-- <xpath expr="//header//span[@role='img']//img" position="attributes">
+            <attribute name="src">/helloworld_module/static/src/img/logo.png</attribute>
+        </xpath>
+
+        <xpath expr="//header//span[@role='img']" position="inside">
+            <img src="/helloworld_module/static/src/img/logo.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style="" />
+        </xpath> -->
+
     </template> 
 </odoo>

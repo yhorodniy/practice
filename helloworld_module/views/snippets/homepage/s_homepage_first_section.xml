@@ -9,7 +9,7 @@
         <xpath expr="//div[@class='carousel-inner']/div[1]" position="attributes">
             <!-- <attribute name="class" add="darken-bg" separator=" "/> -->
             <attribute name="style">
-                background-image: url('/helloworld_module/static/src/img/main_page/first_section_carousel_1.jpg');
+                background-image: url('/helloworld_module/static/src/img/main_page/first_section/first_section_carousel_1.jpg');
                 height: 800px
             </attribute>
         </xpath>
@@ -18,7 +18,7 @@
         <xpath expr="//div[@class='carousel-inner']/div[2]" position="attributes">
             <!-- <attribute name="class" add="darken-bg"  separator=" "/> -->
             <attribute name="style">
-                background-image: url('/helloworld_module/static/src/img/main_page/first_section_carousel_2.jpg');
+                background-image: url('/helloworld_module/static/src/img/main_page/first_section/first_section_carousel_2.jpg');
                 height: 800px
             </attribute>
         </xpath>
@@ -26,37 +26,37 @@
         <xpath expr="//div[@class='carousel-inner']/div[3]" position="attributes">
             <!-- <attribute name="class" add="darken-bg"  separator=" "/> -->
             <attribute name="style">
-                background-image: url('/helloworld_module/static/src/img/main_page/first_section_carousel_3.jpg');
+                background-image: url('/helloworld_module/static/src/img/main_page/first_section/first_section_carousel_3.jpg');
                 height: 800px
             </attribute>
         </xpath>
         
         <xpath expr="//div[@class='carousel-inner']" position="inside">
 
-            <div class="carousel-item oe_img_bg o_bg_img_center pt152 pb152 darken-bg" style="background-image: url('/helloworld_module/static/src/img/main_page/first_section_carousel_4.jpg');height: 800px" data-name="Slide" height="800px">
+            <div class="carousel-item oe_img_bg o_bg_img_center pt152 pb152 darken-bg" style="background-image: url('/helloworld_module/static/src/img/main_page/first_section/first_section_carousel_4.jpg');height: 800px" data-name="Slide" height="800px">
                 <div class="container oe_unremovable">
                     <div class="row">
                         <div class="carousel-content col-lg-9 hw_mainpage_carousel">
-                            <h2 class="display-2-fs">To do with Odoo.</h2>
-                            <p class="lead">Диджиталізація всіх бізнес-процесів підприємства за допомогою однієї системи.</p>
+                            <h2 class="display-2-fs">Збільшіть прибуток на 30% завдяки ERP!</h2>
+                            <p class="lead">Практика впровадження ERP наших клієнтів говорить про те, що вже через рік система дозволить вам оптимізувати витрати і збільшити прибуток!</p>
                             <div class="row">
-                                <p class="col-lg-3"> <a href="/contactus" class="btn btn-primary">Про Odoo</a> </p>
-                                <p class="col-lg-6"> <a href="/contactus" class="btn btn-primary">Отримати демо</a> </p>
+                                <p class="col-lg-3"> <a href="/about-odoo" class="btn btn-primary">Про Odoo</a> </p>
+                                <p class="col-lg-6"> <button id="get-demo-btn" class="btn btn-primary">Отримати демо</button> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="carousel-item oe_img_bg o_bg_img_center pt152 pb152 darken-bg" style="background-image: url('/helloworld_module/static/src/img/main_page/first_section_carousel_5.jpg');height: 800px" data-name="Slide" height="800px">
+            <div class="carousel-item oe_img_bg o_bg_img_center pt152 pb152 darken-bg" style="background-image: url('/helloworld_module/static/src/img/main_page/first_section/first_section_carousel_5.jpg');height: 800px" data-name="Slide" height="800px">
                 <div class="container oe_unremovable">
                     <div class="row">
                         <div class="carousel-content col-lg-9 hw_mainpage_carousel">
-                            <h2 class="display-3-fs">To do with Odoo.</h2>
-                            <p class="lead">Диджиталізація всіх бізнес-процесів підприємства за допомогою однієї системи.</p>
+                            <h2 class="display-3-fs">Odoo - ефективний інструмент для аналітики</h2>
+                            <p class="lead">Не можна покращити те, чого не можна виміряти. ERP дозволить вам вимірювати показники бізнесу і покращувати їх</p>
                             <div class="row">
-                                <p class="col-lg-3"> <a href="/contactus" class="btn btn-primary">Про Odoo</a> </p>
-                                <p class="col-lg-6"> <a href="/contactus" class="btn btn-primary">Отримати демо</a> </p>
+                                <p class="col-lg-3"> <a href="/about-odoo" class="btn btn-primary">Про Odoo</a> </p>
+                                <p class="col-lg-6"> <button id="get-demo-btn" class="btn btn-primary">Отримати демо</button> </p>
                             </div>
                         </div>
                     </div>
@@ -68,11 +68,11 @@
         <xpath expr="//div[@class='carousel-content col-lg-6']" position="replace">
             <div class="row">
                 <div class="carousel-content col-lg-9 hw_mainpage_carousel">
-                    <h2 class="display-3-fs">To do with Odoo.</h2>
-                    <p class="lead">Диджиталізація всіх бізнес-процесів підприємства за допомогою однієї системи.</p>
+                    <h2 class="display-3-fs">Odoo - весь бізнес в 1 програмі!</h2>
+                    <p class="lead">Автоматизація всіх бізнес-процесів підприємства за допомогою однієї системи</p>
                     <div class="row">
-                        <p class="col-lg-3"> <a href="/contactus" class="btn btn-primary">Про Odoo</a> </p>
-                        <p class="col-lg-6"> <a href="/contactus" class="btn btn-primary">Отримати демо</a> </p>
+                        <p class="col-lg-3"> <a href="/about-odoo" class="btn btn-primary">Про Odoo</a> </p>
+                        <p class="col-lg-6"> <button id="get-demo-btn" class="btn btn-primary">Отримати демо</button> </p>
                     </div>
                 </div>
             </div>
@@ -81,11 +81,11 @@
         <xpath expr="//div[@class='carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40']" position="replace">
             <div class="row">
                 <div class="carousel-content col-lg-9 hw_mainpage_carousel">
-                    <h2 class="display-3-fs">To do with Odoo.</h2>
-                    <p class="lead">Диджиталізація всіх бізнес-процесів підприємства за допомогою однієї системи.</p>
+                    <h2 class="display-3-fs">Odoo - ваш надійний помічник</h2>
+                    <p class="lead">Звільніть час для стратегії, доручивши рутину ERP!</p>
                     <div class="row">
-                        <p class="col-lg-3"> <a href="/contactus" class="btn btn-primary">Про Odoo</a> </p>
-                        <p class="col-lg-6"> <a href="/contactus" class="btn btn-primary">Отримати демо</a> </p>
+                        <p class="col-lg-3"> <a href="/about-odoo" class="btn btn-primary">Про Odoo</a> </p>
+                        <p class="col-lg-6"> <button id="get-demo-btn" class="btn btn-primary">Отримати демо</button> </p>
                     </div>
                 </div>
             </div>
@@ -94,11 +94,11 @@
         <xpath expr="//div[@class='carousel-content col-lg-6 offset-lg-6']" position="replace">
             <div class="row">
                 <div class="carousel-content col-lg-9 hw_mainpage_carousel">
-                    <h2 class="display-3-fs">To do with Odoo.</h2>
-                    <p class="lead">Диджиталізація всіх бізнес-процесів підприємства за допомогою однієї системи.</p>
+                    <h2 class="display-3-fs">Хочете, щоб ваш бізнес приносив дивіденди? Інвестуйте в ERP</h2>
+                    <p class="lead">ERP - це не просто програмне забезпечення, це інвестиція у майбутнє вашого бізнесу</p>
                     <div class="row">
-                        <p class="col-lg-3"> <a href="/contactus" class="btn btn-primary">Про Odoo</a> </p>
-                        <p class="col-lg-6"> <a href="/contactus" class="btn btn-primary">Отримати демо</a> </p>
+                        <p class="col-lg-3"> <a href="/about-odoo" class="btn btn-primary">Про Odoo</a> </p>
+                        <p class="col-lg-6"> <button id="get-demo-btn" class="btn btn-primary">Отримати демо</button> </p>
                     </div>
                 </div>
             </div>

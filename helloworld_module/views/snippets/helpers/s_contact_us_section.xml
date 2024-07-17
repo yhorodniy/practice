@@ -1,0 +1,22 @@
+<odoo>
+    <template id="s_contact_us_section" name="Contact Us">
+        <div class="container position-relative pb40 pl40">
+            <div class="row">
+                <form class="col-lg-6 d-flex flex-column align-items-center gap-5 py-5">
+                    <div class="s_title pt40" data-vcss="001">
+                        <div class="s_allow_columns">
+                            <h2 class="display-4-fs main-title-color" style="text-align:center;">Маєте запитання?</h2>
+                        </div>
+                    </div>
+                    <span />
+
+                    <input type="text" placeholder="Ваше ім'я" />
+                    <input type="tel" placeholder="+38 (XXX) XXX-XX-XX" />
+                    <input type="email" placeholder="E-mail" />
+                    <textarea placeholder="Ваше запитання" />
+                    <button class="btn btn-primary" type="submit">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </template>
+</odoo>

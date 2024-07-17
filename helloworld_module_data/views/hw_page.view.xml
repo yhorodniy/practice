@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id='view_hw_page_tree' model='ir.ui.view'>
+            <field name='name'>hw.page.tree</field>
+            <field name='model'>hw.page</field>
+            <field name='arch' type='xml'>
+                <tree string='Test model'>
+                    <field name='name' string='Page name' />
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id='view_test_model_form' model='ir.ui.view'>
+            <field name='name'>hw.page.form</field>
+            <field name='model'>hw.page</field>
+            <field name='arch' type='xml'>
+                <form string='Test model'>
+                    <div> Title <field name='name' /> </div>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

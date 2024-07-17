@@ -25,8 +25,6 @@
                     <div> Title <field name='name' /> </div>
                     <div>
                         <div> First Number <field name='first_num' /> </div>
-                        <div> Second Number <field name='second_num' /> </div>
-                        <div> Operation <field name='operation_type' /> </div>
                     </div>
                 </form>
             </field>

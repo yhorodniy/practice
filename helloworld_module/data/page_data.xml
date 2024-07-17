@@ -1,12 +1,48 @@
 <odoo>
     <data>
         <!-- Default pages -->
-        <record id="aboutus_page" model="website.page">
+        <!-- <record id="hw_homepage_page" model="website.page">
             <field name="url">/</field>
             <field name="is_published">True</field>
-            <field name="view_id" ref="helloworld_module.aboutus"/>
+            <field name="view_id" ref="helloworld_module.y_h_homepage"/>
             <field name="track">True</field>
             <field name="website_meta_description">This is the about us page of the website</field>
+        </record> -->
+
+        <!-- <record id="hw_aboutus_page" model="website.page">
+            <field name="name">About us</field>
+            <field name="url">/aboutus</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="helloworld_module.page_about_us"/>
+            <field name="track">True</field>
+            <field name="website_meta_description">This is the about us page of the website</field>
+        </record> -->
+
+        <record id="hw_homepage_page" model="website.page">
+            <field name="name">Homepage</field>
+            <field name="is_published" eval="True"/>
+            <field name="key">website_airproof.hw_homepage_page</field>
+            <field name="url">/</field>
+            <field name="type">qweb</field>
+            <field name="arch" type="xml">
+                <t t-call="website.layout">
+                    <t t-raw="helloworld_module.y_h_hw_homepage" />
+                </t>
+            </field>
         </record>
+
+        <!-- <record id="page_about_us" model="website.page">
+            <field name="name">About us</field>
+            <field name="is_published" eval="True"/>
+            <field name="key">website_airproof.page_about_us</field>
+            <field name="url">/about-us</field>
+            <field name="type">qweb</field>
+            <field name="arch" type="xml">
+                <t t-call="website.layout">
+                    <t t-raw="helloworld_module.y_h_hw_aboutus" />
+                </t>
+            </field>
+        </record> -->
+        
     </data>
 </odoo>

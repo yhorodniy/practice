@@ -5,20 +5,80 @@ from odoo.http import Controller, request, Response
 import json
 import os
 
-# class HelloWorldController(Controller):
+class HelloWorldController(Controller):
 
-    # @http.route('/', auth='public', website=True)
-    # def homepage_controller(self):
-    #     module_path = os.path.dirname(os.path.abspath(__file__))
+    # Pages
+    @http.route('/', auth='public', website=True)
+    def homepage_controller(self):
+        module_path = os.path.dirname(os.path.abspath(__file__))
         
-    #     json_coop_list_path = os.path.join(module_path, '../static/src/data/some_uk.json')
+        json_clients_list_path = os.path.join(module_path, '../static/src/data/mainpage_carousel.json')
+        json_contact_us_bgs = os.path.join(module_path, '../static/src/data/contact_us_bgs.json')
 
-    #     with open(json_coop_list_path, 'r', encoding='utf-8') as f:
-    #         coop_list = json.load(f)
+        with open(json_clients_list_path, 'r', encoding='utf-8') as f:
+            clients_list = json.load(f)
+
+        with open(json_contact_us_bgs, 'r', encoding='utf-8') as f:
+            contact_us_bgs = json.load(f)
+        
+
+        return http.request.render('helloworld_module.hw_y_h_homepage', {
+            'clients_list': clients_list,
+            'contact_us_bg': contact_us_bgs[0]['mainpage']
+        })
+
+    @http.route('/about-odoo', auth='public', website=True)
+    def aboutodoo_controller(self):
+        module_path = os.path.dirname(os.path.abspath(__file__))
+                
+        json_advantages_list = os.path.join(module_path, '../static/src/data/about_odoo_page.json')
+
+        with open(json_advantages_list, 'r', encoding='utf-8') as f:
+            advantages_list = json.load(f)
+
+        return http.request.render('helloworld_module.hw_y_h_aboutodoo_page',   {
+            'advantages_list': advantages_list
+        })
+
+    @http.route('/about-us', auth='public', website=True)
+    def aboutus_controller(self):
+        module_path = os.path.dirname(os.path.abspath(__file__))
             
-    #     return http.request.render('helloworld_module.homepage', {
-    #         'coop_list': coop_list,
-    #     })
+        return http.request.render('helloworld_module.hw_y_h_aboutus_page')
+
+    
+    # Requests
+
+    @http.route('/create-contact-lead', type='http', auth='public', website=True, csrf=True)
+    def create_lead(self, **kwargs):
+        referer_url = request.httprequest.referrer
+        sales_team = request.env['crm.team'].sudo().search([('name', '=', 'Pre-Sales')], limit=1)
+
+        name = kwargs.get('name')
+        phone = kwargs.get('phone')
+        email_from = kwargs.get('email_from')
+        description = kwargs.get('description')
+
+        # Create a new lead
+        if name and phone and email_from and description:
+            request.env['crm.lead'].sudo().create({
+                'name': name,
+                'contact_name': name,
+                'phone': phone,
+                'mobile': phone,
+                'email_from': email_from,
+                'description': description,
+                'priority': '3',
+                'website': referer_url,
+                'team_id': sales_team.id,
+            })
+        
+        return request.redirect('/')
+
+
+
+
+
 
     # @http.route('/', type='http', auth="public", website=True)
     # def get_jobs(self):

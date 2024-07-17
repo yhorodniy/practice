@@ -1,0 +1,20 @@
+<odoo>
+    <template id="s_homepage_fifth_section" inherit_id="website.s_call_to_action">
+
+        <xpath expr="//div[@class='row']" position="replace">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2 style="color:white;">Хочете спробувати Odoo та дізнатись більше? <br/> Поспілкуйтесь з нашим фахівцем </h2>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                    <p style="text-align: right;"> <a href="tel:380738715313" class="btn btn-primary">+38 073 871 53 13</a> </p>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//section" position="attributes">
+            <attribute name="class">s_call_to_action o_cc pt48 pb24 fifth-section-bg</attribute>
+        </xpath>
+
+    </template>
+</odoo>

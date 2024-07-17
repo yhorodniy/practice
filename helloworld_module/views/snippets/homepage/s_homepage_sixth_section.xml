@@ -1,0 +1,148 @@
+<odoo>
+
+    <template id="s_homepage_sixth_section">
+        <section>
+            <div class="s_title pt40 pb40" data-vcss="001">
+                <div class="container s_allow_columns">
+                    <h2 class="display-4-fs" style="text-align: center;">Кейси</h2>
+                </div>
+            </div>
+            <section style="width:100vw">
+
+                <div class="row sixth_section_items_wrapper">
+
+                    <div
+                        class="col-lg-6 sixth_section_item "
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_1.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div class="">
+                            <h5>Elio Home</h5>
+                            <p>Мета проекту: автоматизація повного виробничого циклу замовленої продукції вітчизняного виробника меблів.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 sixth_section_item"
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_2.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div>
+                            <h5>Honda Ukraine</h5>
+                            <p>Мета проекту: комплексна автоматизація діяльності дилерської мережі офіційного дистриб’ютора автомобілів та силової техніки Honda.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 sixth_section_item"
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_3.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div>
+                            <h5>Lohika</h5>
+                            <p>Мета проекту: автоматизація процесу взаєморозрахунків з контрагентами розробника програмного забезпечення.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 sixth_section_item"
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_4.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div>
+                            <h5>Snap-On Business Solution</h5>
+                            <p>Мета проекту: комплексна автоматизація діяльності дилерської мережі офіційного представника в Україні.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="sixth_section_hiden_content" class="row sixth_section_items_wrapper hiden_content">
+
+                    <div
+                        class="col-lg-6 sixth_section_item "
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_5.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div class="">
+                            <h5>USAID</h5>
+                            <p>Developing an online service for simplifying the process of submitting applications to the court or the police to challenge the protocol on administrative violations, divorce, and child support claims for citizens of Ukraine.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 sixth_section_item"
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_6.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div>
+                            <h5>Planeta Kino IMAX</h5>
+                            <p>Developing a high-performance portal for automation work of cinema networks when dealing with a large number of simultaneous requests and transfering all information to the backoffice.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 sixth_section_item"
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_7.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div>
+                            <h5>Metinvest</h5>
+                            <p>Developing a software and hardware complex that will allow collecting information from the equipment of metaldepots and transfer it using API to other systems, and web interface for its centralized management.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 sixth_section_item"
+                        style="
+                            background-image: url('/helloworld_module/static/src/img/main_page/sixth_section/sixth_section_img_8.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div>
+                            <h5>City Plaza</h5>
+                            <p>Developing a web interface for sheduling customer appointments. In addition, implementation of the machanism of the clients independent online registration for the service without the help of a consultant.</p>
+                            <button>Натисніть, щоб дізнатися більше...</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center my-4">
+                    <button id="sixth_section_show_more_btn" class="btn btn-primary">ПОКАЗАТИ ВСІ ПУНКТИ...</button>
+                </div>
+
+            </section>
+        </section>
+    </template>
+
+</odoo>
