@@ -1,0 +1,38 @@
+$website-values: nth($o-website-values-palettes, 1);
+$color-palette-name: map-get($website-values, 'color-palettes-name');
+$font-name: map-get($website-values, 'font');
+
+$active-font-family: if(
+    map-has-key($o-theme-font-configs, $font-name),
+    map-get(map-get($o-theme-font-configs, $font-name), 'family'),
+    null,
+);
+$active-color-palette: if(
+    map-has-key($o-theme-color-palettes, $color-palette-name),
+    map-get(map-get($o-theme-color-palettes, $color-palette-name), 'gamma'),
+    #000000,
+);
+$theme-h1-font-size: if(
+    variable-exists(o-theme-h1-font-size-multiplier),    
+    $o-theme-h1-font-size-multiplier,
+    60px,
+);
+$theme-font-weight: if(
+    variable-exists(o-theme-headings-font-weight),
+    $o-theme-headings-font-weight,
+    400,
+);
+
+main {
+    @if $active-font-family != null {
+        font-family: $active-font-family;
+    } @else {
+        font-family: 'Arial', sans-serif;
+    }
+}
+
+h1 {
+    color: $active-color-palette;
+    font-size: $theme-h1-font-size;
+    font-weight: $theme-font-weight;
+}

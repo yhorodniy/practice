@@ -3,7 +3,7 @@
     <template id="hw_y_h_aboutodoo_page" name="About Us">
         <t t-call="website.layout">
 
-            <t t-set="title">ERP система Odoo - Всі бізнес-процеси в одній системі</t>
+            <t t-set="title">Odoo - CRM ERP система для оптимізації бізнесу</t>
 
             <div id="wrap" class="oe_structure">
 

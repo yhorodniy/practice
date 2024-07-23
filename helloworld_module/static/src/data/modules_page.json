@@ -1,0 +1,317 @@
+[
+    [
+
+        {
+            "title": "Веб-сайт",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/website/website_1.svg",
+                    "title": "Конструктор веб-сайту"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/website/website_2.svg",
+                    "title": "Електронна комерція"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/website/website_3.svg",
+                    "title": "Блоги"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/website/website_4.svg",
+                    "title": "Форум"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/website/website_5.svg",
+                    "title": "Електронне навчання"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/website/website_6.svg",
+                    "title": "Живий чат"
+                }
+            ]
+        },
+        {
+            "title": "Продажі",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/sales/sales_1.svg",
+                    "title": "CRM"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/sales/sales_2.svg",
+                    "title": "Продажі"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/sales/sales_3.svg",
+                    "title": "Точка продажу"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/sales/sales_4.svg",
+                    "title": "Підписки"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/sales/sales_5.svg",
+                    "title": "Оренда"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/sales/sales_6.svg",
+                    "title": "Точка продажу - ресторани"
+                }
+            ]
+        },
+        {
+            "title": "Фінанси",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/finance/finance_1.svg",
+                    "title": "Бухоблік"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/finance/finance_2.svg",
+                    "title": "Виставлення рахунку"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/finance/finance_3.svg",
+                    "title": "Витрати"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/finance/finance_4.svg",
+                    "title": "Документи"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/finance/finance_5.svg",
+                    "title": "Підпис"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/finance/finance_6.svg",
+                    "title": "Управління активами"
+                }
+            ]
+        },
+        {
+            "title": "Склад та Виробництво",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/supply_chain/supply_chain_1.svg",
+                    "title": "Склад"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/supply_chain/supply_chain_2.svg",
+                    "title": "Виробництво (MRP)"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/supply_chain/supply_chain_3.svg",
+                    "title": "PLM"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/supply_chain/supply_chain_4.svg",
+                    "title": "Купівлі"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/supply_chain/supply_chain_5.svg",
+                    "title": "Технічне обслуговування"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/supply_chain/supply_chain_6.svg",
+                    "title": "Якість"
+                }
+            ]
+        },
+        {
+            "title": "Кадри",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/human_resources/human_resources_1.svg",
+                    "title": "Співробітники"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/human_resources/human_resources_2.svg",
+                    "title": "Рекрутинг"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/human_resources/human_resources_3.svg",
+                    "title": "Відпустки"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/human_resources/human_resources_4.svg",
+                    "title": "Оцінювання"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/human_resources/human_resources_5.svg",
+                    "title": "Рекомеданції"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/human_resources/human_resources_6.svg",
+                    "title": "Автотранспорт"
+                }
+            ]
+        },
+        {
+            "title": "Маркетинг",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/marketing/marketing_1.svg",
+                    "title": "Автоматизація маркетингу"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/marketing/marketing_2.svg",
+                    "title": "Email-маркетинг"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/marketing/marketing_3.svg",
+                    "title": "SMS-маркетинг"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/marketing/marketing_4.svg",
+                    "title": "Маркетинг соцмереж"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/marketing/marketing_5.svg",
+                    "title": "Події"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/marketing/marketing_6.svg",
+                    "title": "Опитування"
+                }
+            ]
+        },
+        {
+            "title": "Послуги",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/services/services_1.svg",
+                    "title": "Опитування"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/services/services_2.svg",
+                    "title": "Табель"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/services/services_3.svg",
+                    "title": "Виїзне обслуговування"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/services/services_4.svg",
+                    "title": "Служба підтримки"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/services/services_5.svg",
+                    "title": "Планування"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/services/services_6.svg",
+                    "title": "Призначення"
+                }
+            ]
+        },
+        {
+            "title": "Продуктивність",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/productivity/productivity_1.svg",
+                    "title": "Обговорення"
+                },
+                {
+                    "id": 2,
+                    "img": "/helloworld_module/static/src/img/modules_page/productivity/productivity_2.svg",
+                    "title": "Схвалення"
+                },
+                {
+                    "id": 3,
+                    "img": "/helloworld_module/static/src/img/modules_page/productivity/productivity_3.svg",
+                    "title": "IP-телефонія"
+                },
+                {
+                    "id": 4,
+                    "img": "/helloworld_module/static/src/img/modules_page/productivity/productivity_4.svg",
+                    "title": "База знань"
+                },
+                {
+                    "id": 5,
+                    "img": "/helloworld_module/static/src/img/modules_page/productivity/productivity_5.svg",
+                    "title": "Інтернет речей"
+                },
+                {
+                    "id": 6,
+                    "img": "/helloworld_module/static/src/img/modules_page/productivity/productivity_6.svg",
+                    "title": "Дашборди"
+                }
+            ]
+        },
+        {
+            "title": "Налаштування",
+            "items": [
+                {
+                    "id": 1,
+                    "img": "/helloworld_module/static/src/img/modules_page/customizations/customizations_1.svg",
+                    "title": "Студія Оdoo"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "img": "/helloworld_module/static/src/img/modules_page/second_section/second_section_1.png",
+            "title": "Інтернет торгівля"
+        },
+        {
+            "id": 2,
+            "img": "/helloworld_module/static/src/img/modules_page/second_section/second_section_2.png",
+            "title": "Меблеве виробництво"
+        },
+        {
+            "id": 3,
+            "img": "/helloworld_module/static/src/img/modules_page/second_section/second_section_3.png",
+            "title": "Текстильне виробництво"
+        },
+        {
+            "id": 4,
+            "img": "/helloworld_module/static/src/img/modules_page/second_section/second_section_4.png",
+            "title": "ІТ"
+        }
+    ]
+]

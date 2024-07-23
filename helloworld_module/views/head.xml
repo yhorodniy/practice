@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="head_meta" inherit_id="website.layout">
-        <xpath expr="//head/title" position="replace">
-            <title> ToDo LLC </title>
-        </xpath>
 
         <xpath expr="//head" position="inside">
 
@@ -19,12 +16,13 @@
 
         </xpath>
 
-        <!-- <xpath expr="//header//span[@role='img']//img" position="attributes">
-            <attribute name="src">/helloworld_module/static/src/img/logo.png</attribute>
-        </xpath>
-
-        <xpath expr="//header//span[@role='img']" position="inside">
-            <img src="/helloworld_module/static/src/img/logo.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style="" />
+        <!-- <xpath expr="//a[@class='navbar-brand logo me-4'" position="replace">
+            <a data-name="Navbar Logo" href="/" class="navbar-brand logo me-4">
+                <span role="img" data-oe-xpath="/data/xpath/a/span[1]" aria-label="Logo of My Website" title="My Website" data-oe-model="website" data-oe-id="1" data-oe-field="logo" data-oe-type="image" data-oe-expression="website.logo">
+                    <img src="/helloworld_module/static/src/img/logo.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style="" />
+                    <img src="/helloworld_module/static/src/img/logo_2.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style="" />
+                </span>
+            </a>
         </xpath> -->
 
     </template> 

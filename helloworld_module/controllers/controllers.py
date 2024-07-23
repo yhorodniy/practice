@@ -40,11 +40,40 @@ class HelloWorldController(Controller):
             'advantages_list': advantages_list
         })
 
-    @http.route('/about-us', auth='public', website=True)
-    def aboutus_controller(self):
+    @http.route('/modules', auth='public', website=True)
+    def modules_controller(self):
         module_path = os.path.dirname(os.path.abspath(__file__))
-            
-        return http.request.render('helloworld_module.hw_y_h_aboutus_page')
+                          
+        json_modules_list = os.path.join(module_path, '../static/src/data/modules_page.json')
+
+        with open(json_modules_list, 'r', encoding='utf-8') as f:
+            modules_list = json.load(f)
+
+        return http.request.render('helloworld_module.hw_y_h_modules_page', {
+            'modules_list': modules_list[0],
+            'cards_list': modules_list[1]
+        })
+
+    @http.route('/contacts', auth='public', website=True)
+    def contacts_controller(self):
+        module_path = os.path.dirname(os.path.abspath(__file__))
+                          
+        json_contacts_page_data = os.path.join(module_path, '../static/src/data/contacts_page.json')
+
+        with open(json_contacts_page_data, 'r', encoding='utf-8') as f:
+            contacts_page_data = json.load(f)
+
+        print(contacts_page_data[0]['services'])
+
+        return http.request.render('helloworld_module.hw_y_h_contacts', {
+            'team': contacts_page_data[0]['team'],
+            'services': contacts_page_data[0]['services'],
+            'coop_list': contacts_page_data[0]['coop'],
+            'solutions': contacts_page_data[0]['solutions'],
+            'advantages': contacts_page_data[0]['advantages'],
+            'obligations': contacts_page_data[0]['obligations'],
+            'differences': contacts_page_data[0]['differences'],
+        })
 
     
     # Requests

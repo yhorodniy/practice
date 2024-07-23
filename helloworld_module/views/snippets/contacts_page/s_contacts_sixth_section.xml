@@ -1,0 +1,42 @@
+<odoo>
+    <template id="s_contacts_sixth_section">
+        <section>
+            <div class="secondary-bg-color pt96 pb96 position-relative">
+
+                <div style="position:absolute;top:-132px;right:0;transform:rotate(180deg);z-index:1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="182" height="264" viewBox="0 0 182 264" fill="none">
+                        <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M98.7887 -1.72728e-05C116.209 -2.03186e-05 116.236 29.2581 98.7887 29.2581L0.000809717 29.2581L0.000802235 9.78547e-06L98.7887 -1.72728e-05ZM0.000575321 87.7787L168.925 87.7787C186.372 87.7787 186.345 58.5206 168.925 58.5206L0.000567839 58.5207L0.000575321 87.7787ZM119.864 117.037C137.283 117.037 137.311 146.295 119.864 146.295L2.90939e-05 146.295L2.04634e-05 117.037L119.864 117.037ZM145.686 175.556C163.105 175.556 163.136 204.814 145.686 204.814L0.00169753 204.814L0.00169005 175.556L145.686 175.556ZM104.718 263.333C122.168 263.333 122.138 234.075 104.718 234.075L0.000638519 234.075L0.000646001 263.333L104.718 263.333Z" fill="#FE5000" stroke=""/>
+                    </svg>
+                </div>
+
+                <div class="container d-flex flex-column justify-content-center">
+                    <h2 class="text-center">
+                        Які проблеми вирішує наш бізнес
+                    </h2>
+                    <span class="line-100 mx-auto mt56 mb96" />
+                    <t tcall="website.s_text_image">
+                        <div class="s_text_image o_mail_snippet_general">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 sixth_section_list">
+
+                                    <t t-foreach="solutions" t-as="solution_item">
+                                        <p class="pe-5 sixth_section_list_item"><t t-esc="solution_item['text']" /></p>
+                                    </t>
+
+                                </div>
+
+                                <div class="col-lg-6 px-0 position-relative">
+                                    <div class="bg_square" style="bottom:-50px;right:-50px;" />
+                                    <div class="sixth_section_img">
+                                        <img src="/helloworld_module/static/src/img/contacts_page/sixth_section/sixth_section_logo.png" width="100%" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+
+            </div>
+        </section>
+    </template>
+</odoo>

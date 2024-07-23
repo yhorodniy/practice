@@ -1,0 +1,28 @@
+<odoo>
+    <template id="s_contacts_seventh_section">
+        <section>
+            <div class="row">
+
+                <div class="col-lg-4 seventh_section_img_bg"></div>
+                <div class="col-lg-8 advantages_container">
+                    
+                    <h2>
+                        Переваги
+                    </h2>
+                    <span class="line-100 mt40 mb40" />
+                    <ul class="advantages_list">
+
+                        <t t-foreach="advantages" t-as="advantages_item">
+                            <li> 
+                                <p><t t-esc="advantages_item['text']" /></p>
+                            </li>
+                        </t>
+                        
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        </section>
+    </template>
+</odoo>

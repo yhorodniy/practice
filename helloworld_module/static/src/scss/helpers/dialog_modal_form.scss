@@ -1,0 +1,70 @@
+.dialog_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: $white;
+    z-index: 9999;
+    @include flexcenter();
+    transition: all .3s;
+    
+    & .dialog_form {
+        background-color: $modal-bg-color;
+        border-radius: $card-border-radius;
+        padding: 70px;
+        max-width: 90%;
+        @include flexcenter();
+
+        & #close-btn {
+            border: 1px solid $main-color;
+            border-radius: 50%;
+            background-color: $black;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+
+        & .contacts-form {
+            @include flexcenter($flex-direction:column,$align-atems:flex-start);
+
+            input, & textarea {
+                max-width: 475px;
+                min-height: 50px;
+                background-color: $secondary-bg-color;
+                border: 1px solid transparent;
+                border-radius: $card-img-border-radius;
+                padding: 5px 10px;
+        
+                &::placeholder {
+                    color: $dark-gray;
+                    font-size: $fsz-footer-contacts;
+                }
+            }
+        }
+
+        & .form-info-data {
+
+            & .form-info-data-workers input {
+                width: 100px;
+                height: 40px;
+            }
+            
+            & .form-checkbox-data {
+                @include flexcenter();
+                gap: 30px;
+                margin-top: 30px;
+                
+                & input {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                & p {
+                    font-size: $fsz-footer-contacts;
+                }
+            }
+        }
+    }
+}
