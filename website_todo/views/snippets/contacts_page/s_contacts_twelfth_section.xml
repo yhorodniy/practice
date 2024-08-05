@@ -1,0 +1,14 @@
+<odoo>
+    <template id="s_contacts_twelfth_section">
+        <section>
+            
+            <div t-att-style="'background-color: #101820;'" class="bg_contact_us_section eighth_section_contact-us">
+                <img src="/website_todo/static/src/img/contacts_page/bg_img.png" />
+                <img src="/website_todo/static/src/img/about_odoo_page/eighth_section/bg_svg.svg" />
+                <t t-call="website_todo.s_contact_us_section" />
+                <div class="eighth_section_contact-us-line" />
+            </div>
+
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+     
+    <template id="todo_y_h_contacts" name="Contacts">
+        <t t-call="website.layout">
+            <t t-set="title">Про нас - ТОВ «ТуДу» - молода та досвідчена команда ІТ</t>
+            <div id="wrap" class="oe_structure">
+
+                <t t-call="website_todo.s_contacts_first_section" />
+                <t t-call="website_todo.s_contacts_second_section" />
+                <t t-call="website_todo.s_contacts_third_section" />
+                <t t-call="website_todo.s_contacts_fourth_section" />
+                <t t-call="website_todo.s_contacts_fifth_section" />
+                <t t-call="website_todo.s_contacts_sixth_section" />
+                <t t-call="website_todo.s_contacts_seventh_section" />
+                <t t-call="website_todo.s_contacts_eighth_section" />
+                <t t-call="website_todo.s_contacts_ninth_section" />
+                <t t-call="website_todo.s_contacts_tenth_section" />
+                <t t-call="website_todo.s_contacts_eleventh_section" />
+                <t t-call="website_todo.s_contacts_twelfth_section" />
+
+            </div>
+            <t t-append="head">
+                <script type="text/javascript" src="/website_todo/static/src/js/contacts_page.js"></script>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,43 @@
+<odoo>
+    <template id="s_contacts_eighth_section">
+        <section>
+            <div class="pt72">
+                
+                <h2 class="text-center">
+                    Наші відносини з клієнтами
+                </h2>
+                <span class="line-100 mx-auto mt56 mb96" />
+                <div class="container position-relative pb72">
+                    <img class="mx-auto" src="/website_todo/static/src/img/contacts_page/eighth_section/eighth_section_main_logo.png" />
+                    <ul class="eighth_section_relation_list">
+                        <li class="text-center">
+                            Прозорі та відкриті.<br />Про все говоримо відверто, як є.
+                        </li>
+                        <li class="text-center">
+                            Легкі, з долею допустимого гумору.
+                        </li>
+                        <li class="text-center">
+                            «Дружба на все життя».
+                        </li>
+                        <li class="text-center">
+                            Партнерські, а не клієнтські. Ми на одній<br />стороні - Win-win.
+                        </li>
+                    </ul>
+                    <div class="eighth_section_arrows">
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/arrow.svg" alt="arrow"/>
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/arrow.svg" alt="arrow"/>
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/arrow.svg" alt="arrow"/>
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/arrow.svg" alt="arrow"/>
+                    </div>
+                    <div class="eighth_section_vectors">
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/vector_1.svg" alt="vactor"/>
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/vector_2.svg" alt="vactor"/>
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/vector_3.svg" alt="vactor"/>
+                        <img src="/website_todo/static/src/img/contacts_page/eighth_section/vector_4.svg" alt="vactor"/>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </template>
+</odoo>

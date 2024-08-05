@@ -1,3 +1,0 @@
-<odoo>
-    <template id="s_about_odoo_page_fifth_section" inherit_id="helloworld_module.s_homepage_third_section" />
-</odoo>

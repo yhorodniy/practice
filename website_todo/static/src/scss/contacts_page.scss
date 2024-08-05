@@ -1,0 +1,432 @@
+
+// Second section
+
+.contacts_second_section_bg {
+    background-color: $main-color;
+    position: absolute;
+    bottom: 28%;
+    width: 100%;
+    height: 50%;
+    border-radius: $background-border-radius $background-border-radius 0 0;
+}
+
+.carousel-slide_contacts {
+
+    & div {
+        
+        & h4, & p {
+            color: $black;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+// Third section
+
+.contacts_third_section_content {
+    padding-right: 50px;
+    
+    & ul {
+        @include flexcenter($align-atems:flex-start, $flex-direction:column);
+        gap: 20px;
+
+        & li {
+            background: url(/website_todo/static/src/img/list_dot.svg) no-repeat left 12px;
+            padding: 0 0 0 40px;
+            list-style-type: none;
+
+            & p {
+                font-size: $fsz-key-text;
+            }
+        }
+    }
+}
+
+
+// Fourth section
+
+.fourthsection {
+    & .container {
+        max-width: 1360px;
+    }
+}
+
+.fourthsection_items_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+    margin-bottom: 50px;
+
+    & div {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+                            "... h4"
+                            "svg p ";
+        align-items: center;
+        justify-content: start;
+        row-gap: 30px;
+        column-gap: 25px;
+        padding: 25px 15px 25px 25px;
+        border-radius: $background-border-radius;
+
+        background-color: #FFFFFF;
+        box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.5);
+        
+        transition: all .4s;
+
+        & h4 {
+            grid-area: h4;
+            color: $main-color;
+            font-size: $fsz-sub-title;
+            font-weight: $fw-regular;
+        }
+
+        & svg {
+            grid-area: svg;
+            justify-self: center;
+        }
+
+        & p {
+            grid-area: p;
+            font-weight: $fw-regular;
+            color: $modal-bg-color;
+            font-size: $fsz-key-text;
+            font-weight: $fw-medium;
+            line-height: 1.75rem;
+        }
+
+        &:hover {
+            box-shadow: none;
+
+            & h4, & p {
+                color: $white;
+            }
+
+            background-color: $main-color;
+        }
+
+        &:hover #group path {stroke: $white;}
+
+        &.first_item:hover #group path {
+            &:nth-child(1) {
+                fill: $white;
+            }
+        }
+
+        &.second_item:hover #group path {
+            &:nth-child(1) {
+                fill: $white;
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                stroke: $main-color;
+            }
+
+        } 
+
+        &.third_item:hover #group path {
+            &:nth-child(even) {
+                fill: $white;
+            }
+        }
+    }
+}
+
+
+// Fifth section
+
+.fifth_section_accordion {
+    margin: 0 auto;
+    max-width: 620px;
+    overflow: hidden;
+
+    & .fifth_section_accordion_item {
+        position: relative;
+        border-radius: $bnt-border-radius;
+        background: $white;
+        box-shadow: 0px 4px 4px 0px rgba(16, 24, 32, 0.25);
+        margin: 34px 0;
+        padding: 0 5px 15px 50px;
+        color: $main-color;
+        transition: all 0.3s ease-out;
+    
+        & i {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: $black;
+            font-size: $fsz-key-text;
+            transition: all 0.3s ease-out;
+        }
+        
+        & .fifth_section_accordion_header {
+            font-size: $fsz-sub;
+            font-weight: $fw-bold;
+            padding: 25px;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.3s ease-out;
+        }
+        
+        & .fifth_section_accordion_content {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 15px;
+            color: $white;
+            transition: all 0.3s ease-out;
+        }   
+        
+        &.open {
+            border: 1px solid $ligh-gray;
+            box-shadow: none;
+            background-color: $black;
+            color: $white;
+        
+            & i {
+                transform: rotateZ(45deg);
+                color: $white;
+            }
+        
+            & .fifth_section_accordion_content {
+                max-height: 400px;
+                padding: 15px;
+            }
+        }
+    }
+}
+    
+.fifth_section_btns {
+    @include flexcenter();
+    gap: 200px;
+    margin-top: 100px;
+
+    & button {
+        font-family: "Roboto", Sans-serif;
+        font-size: $fsz-key-text;
+        font-weight: $fw-medium;
+        border: 2px solid $main-color;
+        border-radius: $background-border-radius;
+        padding: 18px 24px;
+        transition: all 0.3s;
+    }
+
+    & .presentation_btn {
+        color: $white;
+        background-color: $main-color;
+
+        &:hover {
+            color: $main-color;
+            background-color: $white;
+        }
+    }
+    
+    & .callback_btn {
+        color: $main-color;
+        background-color: $white;
+
+        &:hover {
+            color: $white;
+            background-color: $main-color;
+        }
+    }
+}
+
+
+// Sixth section
+
+.sixth_section_list {
+    @include flexcenter($flex-direction:column);
+
+    gap: 70px;   
+}
+
+.sixth_section_list_item {
+    background: url(/website_todo/static/src/img/contacts_page/sixth_section/sixth_section_list_dot.svg) no-repeat left 12px;
+    padding-left: 40px;
+    font-weight: $fw-regular;
+    color: $modal-bg-color;
+    font-size: $fsz-key-text;
+    line-height: 2.2rem;
+    margin: 0;
+}
+
+.bg_square {
+    background-color: #FE5000;
+    width: 323px;
+    height: 323px;
+    border-radius: $background-border-radius;
+    position: absolute;
+    z-index: 1;
+}
+
+.sixth_section_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+// Seventh section
+
+.seventh_section_img_bg {
+    background: url("/website_todo/static/src/img/contacts_page/seventh_section/seventh_section_1.jpeg") no-repeat;
+    background-size: cover;
+    filter: sepia(50%);
+}
+
+.advantages_container {
+    background-color: $modal-bg-color;
+    padding: 100px;
+    color: $white;
+
+    & .advantages_list {
+        @include flexcenter($align-atems:flex-start, $flex-direction:column);
+        gap: 20px;
+        width: 40%;
+        padding-left: 0;
+
+        & li {
+            background: url(/website_todo/static/src/img/list_dot.svg) no-repeat left 12px;
+            padding: 0 0 0 40px;
+            list-style-type: none;
+
+            & p {
+                font-size: $fsz-key-text;
+            }
+        }
+    }
+}
+
+
+// Eighth section
+
+.eighth_section_relation_list {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    z-index: 1;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: 350px;
+    row-gap: 350px;
+    
+    & li {
+        position: relative;
+        background-color: $white;
+        border: 1px solid $main-color;
+        color: $modal-bg-color;
+        padding: 20px 70px;
+        width: max-content;
+        border-radius: $card-border-radius;
+        font-weight: $fw-medium;
+        line-height: 1.5rem;
+
+        &:nth-child(odd) {
+            top: -50px;
+        }
+    }
+}
+
+.eighth_section_arrows img {
+    position: absolute;
+
+    &:nth-child(1) {
+        top: 140px;
+        right: 440px;
+        transform: rotate(-15deg) scale(0.8);
+    }
+    
+    &:nth-child(2) {
+        top: 700px;
+        left: 320px;
+        transform: rotate(155deg) scale(0.8);
+    }
+
+    &:nth-child(3) {
+        top: 530px;
+        right: 230px;
+    }
+    &:nth-child(4) {
+        top: 320px;
+        left: 230px;
+        transform: rotate(180deg);
+    }
+}
+
+.eighth_section_vectors img {
+    position: absolute;
+    z-index: 2;
+
+    &:nth-child(1) {
+        top: 150px;
+        left: 170px;
+    }
+
+    &:nth-child(2) {
+        top: 30px;
+        right: 350px;
+    }
+    
+    &:nth-child(3) {
+        top: 470px;
+        right: 200px;
+    }
+    
+    &:nth-child(4) {
+        bottom: 0;
+        left: 250px;
+    }
+}
+
+
+// Tenth section
+
+.tenth_section {
+
+    & .sixth_section_list {
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0 250px;
+    }
+}
+
+
+// Eleventh section
+
+.eleventh_section_contacts {
+    padding: 50px 100px;
+
+    & .eleventh_section_contacts_info {
+        @include flexcenter($align-atems:flex-start,$flex-direction:column);
+        gap: 20px;
+        
+        & .address {
+            @include flexcenter($align-atems:flex-start,$justify-content:flex-start);
+            gap: 20px;
+            color: $white;
+    
+            & div {
+                @include flexcenter($align-atems:flex-start,$flex-direction:column);
+                gap: 10px;
+            }
+    
+            & p, a {
+                font-size: $fsz-footer-contacts;
+            }
+    
+            & a, & a:link, & a:visited, & a:active, & a:hover {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

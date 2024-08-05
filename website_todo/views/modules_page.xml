@@ -1,0 +1,19 @@
+<odoo>
+    
+    <template id="todo_y_h_modules_page" name="About Us">
+        <t t-call="website.layout">
+
+            <t t-set="title">Модулі Odoo - діджиталізація всіх бізнес-процесів підприємства</t>
+
+            <div id="wrap" class="oe_structure">
+
+                <t t-call="website_todo.s_modules_page_first_sections" />
+                <t t-call="website_todo.s_modules_page_second_sections" />
+                <t t-call="website_todo.s_modules_page_third_sections" />
+                
+            </div>
+            
+        </t>
+    </template>
+
+</odoo>
