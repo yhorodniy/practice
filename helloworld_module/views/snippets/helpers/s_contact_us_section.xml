@@ -1,6 +1,6 @@
 <odoo>
     <template id="s_contact_us_section" name="Contact Us">
-        <div class="container position-relative pb40 pl40">
+        <div id="contact_us" class="container position-relative pb40 pl40">
             <div class="row">
                 <form class="col-lg-6 d-flex flex-column align-items-center gap-5 py-5">
                     <div class="s_title pt40" data-vcss="001">

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_23" model="blog.post">
+            <field name="name">
+                Todo — Silver-партнер Odoo
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_7"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2024-05-05'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_6'), ref('blog_tag_7')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_11/main_img.png')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            Todo — Silver-партнер Odoo в Україні! 
+                        </h1>
+
+                        <p class="capitalize">
+                            Минуло не так багато часу з того моменту, як ми отримали <a href="/blog/pro-todo-9/todo-ofitsiinii-ready-partner-odoo-v-ukraini-37">статус Ready-партнера Odoo</a>, а ми вже готові повідомити вам про наше нове досягнення — відтепер ми повноцінний Silver-партнер.
+                        </p>
+
+                        <p>
+                            Ви можете власноруч переконатися в цьому — просто перейдіть на офіційний сайт Odoo за цим <a href="https://www.odoo.com/uk_UA/partners">посиланням</a> і в графі “Silver Партнери” ви побачите ToDo.
+                        </p>
+
+                        <p>
+                            Нам знадобилося всього-на-всього 1,5 року, щоб досягти такого результату й ми дуже пишаємося тим, що попри всі труднощі, які виникали й продовжують виникати на нашому шляху — ми зробили це.
+                        </p>
+
+                        <h2>
+                            Що означає статус Silver-партнера?
+                        </h2>
+
+                        <p>
+                            Отримання компанією-інтегратором статусу Silver-партнера фактично говорить про підвищення її кваліфікації. Для отримання цього статусу слід виконати певні умови, що диктуються головним офісом Odoo в Бельгії.
+                        </p>
+
+                        <p>
+                            Виконавши ці умови й отримавши статус Silver-партнера ми хочемо поділитися з вами нашими успіхами: наразі ми маємо 3 сертифікати, що офіційно засвідчують нашу обізнаність в ERP Odoo, тому можете бути певні, що обираючи ToDo — ви укладаєте угоду з професіоналами. 
+                        </p>
+
+                        <p>
+                            Також, наразі ми впроваджуємо Odoo дев’ятнадцятьом нашим клієнтам, які є представниками різноманітних галузей бізнесу: від металопрокату і до виробництва одягу.
+                        </p>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_11/img_1.jpg"/>
+
+                        <h2>
+                            Чому важливо отримувати такі статуси?
+                        </h2>
+
+                        <p>
+                            Отримання статусу сертифікованого Silver-партнера є стратегічно важливим для нас, адже він підтверджує той факт, що ми рухаємося у правильному напрямку. Для наших клієнтів це може означати те, що наша команда має певну компетенцію й добре знається на системі, що позитивно вплине на якість впровадження проєкту. 
+                        </p>
+
+                        <p>
+                            Варто зазначити, що на момент написання цього матеріалу в Україні лиш 2 компанії мають статус Silver-партнера і ми входимо до цього переліку, що однозначно є предметом нашої гордості.
+                        </p>
+
+                        <h2>
+                            Плани на майбутнє
+                        </h2>
+
+                        <p>
+                            Одна з цілей, на яку зараз покладено всі ресурси — отримання статусу Gold-партнера Odoo в Україні.
+                        </p>
+
+                        <p>
+                            Хочемо висловити щиру вдячність кожному, хто так чи інакше вплинув на цей результат: партнерам, команді, нашим замовникам — всім, адже без вас це було б просто неможливо!
+                        </p>
+
+                        <p>
+                            Також віддаємо належне тому темпу розвитку, який ми набрали останнім часом — нас він ще й як вражає і ми не плануємо зупинятись! В нас є багато планів на майбутнє і чітке бачення того, куди ми маємо прийти, тож робимо все можливе для “dreams come true” як то кажуть)
+                        </p>
+
+                        <p>
+                            Далі — більше!
+                        </p>
+
+                        <div class="action_btns">
+                            <button id="get-presentation-btn" class="btn btn-primary" type="button">
+                                Замовити консультацію
+                            </button>
+                            <button id="get-demo-btn" class="btn btn-primary" type="button">
+                                Отримати демо
+                            </button>
+                        </div>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_26" model="blog.post">
+            <field name="name">
+                ToDo with Укрлегпром
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_7"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2024-05-24'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_6'), ref('blog_tag_7')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_08/main_img.png')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            ToDo — член Укрлегпром 
+                        </h1>
+
+                        <p class="capitalize">
+                            Віднедавна ми стали членами асоціації <a href="https://ukrlegprom.org/ua/">Укрлегпром</a>, що розшифровується як “Українська асоціація підприємств легкої промисловості”. Спілка об’єднує понад 250 підприємств легкої промисловості, обсяг виробництва яких становить понад 60 відсотків загального обсягу виробництва товарів легкої промисловості України.
+                        </p>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_08/img_1.png"/>
+
+                        <p>
+                            Кілька ключових фактів про Укрлегпром:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Головною місією асоціації є захист та лобіювання інтересів вітчизняних виробників на всіх рівнях;
+                            </li>
+                            <li>
+                                Займаються розробкою пропозицій у галузі легкої промисловості стосовно підписання ЗВТ з іншими державами;
+                            </li>
+                            <li>
+                                Надають консультативно-правову допомогу підприємствам.
+                            </li>
+                        </ul>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_08/img_2.png"/>
+
+                        <p>
+                            Беручи до уваги наш досвід та експертизу у сфері інформаційних технологій ми входимо до складу Укрлегпром як <a href="https://ukrlegprom.org/ua/members-category/associated/">асоційована організація</a>.
+                        </p>
+
+                        <p>
+                            Як член такого об’єднання ми ставимо перед собою важливу місію, а саме: сприяння цифровому розвитку бізнесу шляхом підтримки законодавчих питань, організація консультаційної діяльності у сферах інформаційних технологій, телекомунікацій та електронних послуг. Обіцяємо робити все від нас залежне, щоб досягти успіху у цій справі.
+                        </p>
+
+                        <p>
+                            Ми дуже пишаємось, що можемо бути частиною такого великого ком’юніті, яке працює задля розвитку і підтримки українського бізнесу! Сподіваємось на плідну співпрацю!
+                        </p>
+
+                        <div class="action_btns">
+                            <button id="get-presentation-btn" class="btn btn-primary" type="button">
+                                Замовити консультацію
+                            </button>
+                            <button id="get-demo-btn" class="btn btn-primary" type="button">
+                                Отримати демо
+                            </button>
+                        </div>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

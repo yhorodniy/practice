@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_20" model="blog.post">
+            <field name="name">
+                Вебінар - Odoo VS 1C, BAS
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_3"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2024-04-09'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_1'), ref('blog_tag_2'), ref('blog_tag_3'), ref('blog_tag_6'), ref('blog_tag_7')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_14/main_img.jpg')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            Порівняння Odoo, 1C, BAS – безкоштовний вебінар 
+                        </h1>
+
+                        <p class="capitalize">
+                            Вже 17 квітня о 15:00 за київським часом в нас відбудеться вебінар на тему: «Сильні та слабкі сторони Odoo в порівнянні з 1С, BAS на думку 1С-ка з 20-річним досвідом». Пряма трансляція відбудеться на нашому офіційному YouTube-каналі, тож приєднатись зможуть всі охочі, з будь-якого куточка планети!
+                        </p>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_13/img_1.png"/>
+
+                        <p>
+                            На заході будуть розглянуті три найпопулярніші системи автоматизації бізнес-процесів в Україні: <a href="/about-odoo">Odoo</a>, 1C, BAS. ПЗ порівнюватиметься за наступними критеріями: 
+                        </p>
+
+                        <ul>
+                            <li>
+                                загальні параметри
+                            </li>
+                            <li>
+                                покриття основних функцій бізнесу (від CRM і продажів - до виробництва та обліку)
+                            </li>
+                            <li>
+                                наявність додаткового функціонала (від можливості розробки сайту - до наявності мобільного додатку)
+                            </li>
+                            <li>
+                                інтерфейси, <a href="/">ERP система</a>, системи звітності, дашборди
+                            </li>
+                        </ul>
+
+                        <p>
+                            Порівняння від нашого експерта буде підкріплено скріншотами систем, тому ви наочно зможете оцінити функціонал кожної з програм. Спікером буде надана оцінка кожному з критеріїв, з урахуванням всіх “за” та “проти”. 
+                        </p>
+
+                        <p>
+                            Наприкінці вебінару вас очікує Q&A сесія, під час якої ви зможете поставити запитання та почути на нього відповідь від експерта у сфері автоматизації з двадцятирічним досвідом!
+                        </p>
+
+                        <p>
+                            Всі попередньо зареєстровані на івент учасники — отримають матеріали з вебінару та практичні подарунки від Олексія, тому хутчіш реєструйтесь <a href="https://erp.todo.ltd/r/HMy">за цим посиланням</a> до 12:00 18.04.24 і не проґавте можливість отримати багато корисного контенту.
+                        </p>
+
+                        <h2>
+                            То як потрапити на вебінар?
+                        </h2>
+
+                        <p>
+                            Трансляція буде доступна 17.04.2024, о 15:00 за київським часом, всім користувачам без виключення.
+                        </p>
+
+                        <ol>
+                            <li>
+                                Попередньо <a href="https://erp.todo.ltd/r/HMy">зареєструвавшись</a> — ви отримаєте лист-нагадування у день вебінару.
+                            </li>
+                            <li>
+                                Перейдіть за цим <a href="https://youtube.com/live/8KqzSHdOiRw?feature=share">посиланням</a> у вищезазначену дату та час на пряму трансляцію.
+                            </li>
+                            <li>
+                                Підпишіться на наш <a href="https://www.youtube.com/channel/UC0NexR-N6kQKO7U2zSN4_8g">YouTube-канал</a>, увімкніть сповіщення про нові відео, щоб отримати нагадування про вебінар перед його початком.
+                            </li>
+                        </ol>
+
+                        <p>
+                            Якщо у вас є бажання брати активну участь в обговоренні теми вебінару, спілкуванні зі спікером та іншими учасниками заходу в чаті трансляції — переконайтесь, що ви увійшли на YouTube під своїм обліковим записом Google.
+                        </p>
+
+                        <p>
+                            Не пропустіть можливість безкоштовно отримати багато практичної та корисної інформації від фахівця у сфері автоматизації!
+                        </p>
+
+                        <h2>
+                            Кому варто відвідати вебінар?
+                        </h2>
+
+                        <ul>
+                            <li>
+                                Тим, хто шукає рішення для автоматизації своїх бізнес-процесів
+                            </li>
+                            <li>
+                                Тим, хто шукає альтернативу для переходу з 1С та BAS
+                            </li>
+                            <li>
+                                Тим, хто вагається у виборі системи для автоматизації
+                            </li>
+                        </ul>
+
+                        <div class="action_btns">
+                            <button id="get-presentation-btn" class="btn btn-primary" type="button">
+                                Замовити консультацію
+                            </button>
+                            <button id="get-demo-btn" class="btn btn-primary" type="button">
+                                Отримати демо
+                            </button>
+                        </div>
+
+                        <p>
+                            У разі виникнення будь-яких додаткових питань - звертайтесь на електронну пошту: <a href="mailto:marketing@todo.ltd">marketing@todo.ltd</a>
+                        </p>
+
+                        <p>
+                            У разі виникнення будь-яких додаткових питань - звертайтесь на електронну пошту: marketing@todo.ltd
+                        </p>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

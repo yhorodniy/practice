@@ -52,25 +52,29 @@ li {
 }
 
 .btn-primary, .btn-primary:focus {
-    color: $white;
-    background-color: $main-color;
-    box-shadow: none;
-    border-radius: $bnt-border-radius;
-    border: 1px solid $main-color;
-    transition: all .3s;
-    padding: 10px 40px;
-    width: max-content;
+    color: $white !important;
+    background-color: $main-color !important;
+    box-shadow: none !important;
+    border-radius: $bnt-border-radius !important;
+    border: 1px solid $main-color !important;
+    transition: all .3s !important;
+    padding: 10px 40px !important;
+    width: max-content !important;
 
     &:hover {
-        color: $black;
-        background-color: $white;
+        color: $black !important;
+        background-color: $white !important;
     }
 
     &:active {
-        color: $white;
-        box-shadow: none;
-        background-color: $black;
+        color: $white !important;
+        box-shadow: none !important;
+        background-color: $black !important;
     }
+}
+
+.btn:focus {
+    box-shadow: none !important;
 }
 
 .line-100 {
@@ -79,6 +83,11 @@ li {
     height: 1px;
     background-color: $main-color;
 }
+
+.custom-dropdown {
+    font-size: $fsz-key-text;
+}
+
 
 @media (min-width: 1650px) {
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {

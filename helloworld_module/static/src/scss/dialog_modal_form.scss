@@ -15,8 +15,8 @@
         border-radius: $card-border-radius;
         padding: 70px;
         max-width: 90%;
-        @include flexcenter();
-
+        @include flexcenter();        
+        
         & #close-btn {
             border: 1px solid $main-color;
             border-radius: 50%;

@@ -1,0 +1,53 @@
+{
+    'name': "Website Blog ToDo",
+    'depends': [
+        'website_blog'
+    ],
+    'data': [
+        'views/website_blog_todo_template.xml',
+        'data/website_blog_todo_comments.xml',
+        'data/website_blog_todo_items.xml',
+        'data/website_blog_todo_tags.xml',
+        'data/posts/website_blog_todo_post_01.xml',
+        'data/posts/website_blog_todo_post_02.xml',
+        'data/posts/website_blog_todo_post_03.xml',
+        'data/posts/website_blog_todo_post_04.xml',
+        'data/posts/website_blog_todo_post_05.xml',
+        'data/posts/website_blog_todo_post_06.xml',
+        'data/posts/website_blog_todo_post_07.xml',
+        'data/posts/website_blog_todo_post_08.xml',
+        'data/posts/website_blog_todo_post_09.xml',
+        'data/posts/website_blog_todo_post_10.xml',
+        'data/posts/website_blog_todo_post_11.xml',
+        'data/posts/website_blog_todo_post_12.xml',
+        'data/posts/website_blog_todo_post_13.xml',
+        'data/posts/website_blog_todo_post_14.xml',
+        'data/posts/website_blog_todo_post_15.xml',
+        'data/posts/website_blog_todo_post_16.xml',
+        'data/posts/website_blog_todo_post_17.xml',
+        'data/posts/website_blog_todo_post_18.xml',
+        'data/posts/website_blog_todo_post_19.xml',
+        'data/posts/website_blog_todo_post_20.xml',
+        'data/posts/website_blog_todo_post_21.xml',
+        'data/posts/website_blog_todo_post_22.xml',
+        'data/posts/website_blog_todo_post_23.xml',
+        'data/posts/website_blog_todo_post_24.xml',
+        'data/posts/website_blog_todo_post_25.xml',
+        'data/posts/website_blog_todo_post_26.xml',
+        'data/posts/website_blog_todo_post_27.xml',
+        'data/posts/website_blog_todo_post_28.xml',
+        'data/posts/website_blog_todo_post_29.xml',
+        'data/posts/website_blog_todo_post_30.xml',
+        'data/posts/website_blog_todo_post_31.xml',
+        'data/posts/website_blog_todo_post_32.xml',
+        'data/posts/website_blog_todo_post_33.xml',
+    ],
+    'assets': {
+        'web.assets_frontend': [
+            'website_blog_todo/static/scss/index.scss'
+        ]
+    },
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

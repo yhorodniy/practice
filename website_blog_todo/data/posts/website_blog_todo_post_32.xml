@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_32" model="blog.post">
+            <field name="name">
+                ERP для логістики
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_6"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2024-06-25'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_6'), ref('blog_tag_7')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_02/main_img.png')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            Автоматизація для експедиторів та перевізників. Крок назустріч Європейському ПЗ  
+                        </h1>
+                        
+                        <h2>
+                            Вітаємо, IT-спільното!
+                        </h2>
+
+                        <p class="capitalize">
+                            Раді повідомити, що ми візьмемо участь у всеукраїнському форумі експедиторів та перевізників, який пройде у Києві 28.06.2024 (п’ятниця), в готельному комплексі Ramada Encore, де хочемо розповісти про користь автоматизації для сучасного українського бізнесу.
+                        </p>
+
+                        <p>
+                            На івенті буде розглядатися питання нових можливостей та випробувань, що очікують на логістику автоперевезень; ефективного налагодження співпраці між перевізником і експедитором; впливу автоматизації та інновацій на міжнародні перевезення та багато інших, не менш актуальних тем!
+                        </p>
+
+                        <p>
+                            Мета цього заходу полягає у створенні майданчика для нетворкінгу, обміну знаннями, інструментами та технологіями між учасниками, а також пошук додаткових інструментів співпраці з операторами ринку, створення передумов добросовісної конкуренції.
+                        </p>
+
+                        <p>
+                            У вас буде чудова нагода наживо познайомитись з нашою командою, яка наочно продемонструє вам усі переваги автоматизації на практиці! Ви зможете протестувати ERP Odoo прямо на нашому стенді і власноруч переконатись у користі цієї системи.
+                        </p>
+
+                        <p>
+                            Ми, як спонсори заходу, будемо дуже раді вас бачити. Залюбки надамо відповіді на всі запитання та наочно продемонструємо усі можливості системи «тут і зараз».
+                        </p>
+
+                        <p>
+                            Зареєструвати свою участь можна за <a href="https://kyivlogisticsschool.com/courses/vseukrainskij-forum-ekspeditoriv-ta-pereviznikiv/">цим посиланням</a>.
+                        </p>
+
+                        <p>
+                            До зустрічі на всеукраїнському форумі експедиторів та перевізників!
+                        </p>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

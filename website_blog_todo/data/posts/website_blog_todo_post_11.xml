@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_11" model="blog.post">
+            <field name="name">
+                Merry christmas and happy new year
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_6"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2023-12-25'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_7')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_23/main_img.png')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            Вітання з Різдвом Христовим і прийдешнім Новим Роком  
+                        </h1>
+
+                        <p class="capitalize">
+                            Дорогі друзі та партнери,
+                        </p>
+
+                        <p>
+                            Ми, від усієї нашої дружньої команди, вітаємо вас з Різдвом Христовим та прийдешнім Новим Роком! У ці святкові дні, коли в кожному серці горить вогонь добра і надії, хочемо подякувати вам за ще один чудовий рік спільної подорожі.
+                        </p>
+
+                        <p>
+                            Для нас Різдво – це час, коли об'єднуються радість і тепло. А в Новому Році ми всі маємо чудову можливість розпочати новий етап, сповнений невідомими викликами та можливостями. Зичимо вам світлих моментів, спокою та затишку у колі рідних і близьких.
+                        </p>
+
+                        <p>
+                            Ще один рік, що ми подолали разом, є свідченням вашої довіри та вірності і ми це дуже цінуємо, адже без вас наш успіх був би неможливий. У новому році ми впевнено продовжимо нашу місію – створювати інноваційні рішення для автоматизації бізнес-процесів та сприяти процвітанню ваших проєктів.
+                        </p>
+
+                        <p>
+                            Нехай наступний рік принесе вам лише позитивні емоції, нові можливості та безмежну радість. Бажаємо вам впевненості у власних силах, натхнення та справжньої гармонії у всіх аспектах життя. І звичайно, дякуємо ЗСУ, віримо в перемогу!
+                        </p>
+
+                        <p>
+                            Вдячні за вашу невтомну підтримку! З нетерпінням чекаємо нових досягнень та спільних перемог у майбутньому році!
+                        </p>
+
+                        <p>
+                            З Новим Роком та Різдвом Христовим, Слава Україні!
+                        </p>
+
+                        <p>
+                            Команда ToDo
+                        </p>
+
+                        <div class="action_btns">
+                            <button id="get-presentation-btn" class="btn btn-primary" type="button">
+                                Замовити консультацію
+                            </button>
+                            <button id="get-demo-btn" class="btn btn-primary" type="button">
+                                Отримати демо
+                            </button>
+                        </div>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

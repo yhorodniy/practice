@@ -11,105 +11,35 @@
                     <h2>Інтеграція Odoo з понад 50 системами, серед яких найпопулярніші</h2>
                 </div>
                 <div class="items-list-wrapper">
-                    <div class="items-list-column">
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_1.svg" /> </div>
-                            <h4>ПРРО</h4>
-                            <ul>
-                                <li>Checkbox</li>
-                                <li>Checkbox для POS</li>
-                            </ul>
+
+                    <t t-foreach="integrations" t-as="integrations_column">
+
+                        <div class="items-list-column">
+
+                            <t t-foreach="integrations_column" t-as="integrations_item">
+
+                                <div class="item-wrapper">
+                                    <div class="img-wrapper">
+                                        <img t-att-src="integrations_item['img']" t-att-alt="integrations_item['title']" />
+                                    </div>
+                                    <h4>
+                                        <t t-esc="integrations_item['title']" />
+                                    </h4>
+                                    <ul>
+
+                                        <t t-foreach="integrations_item['list']" t-as="list_item">
+                                            <li> <t t-esc="list_item" /> </li>
+                                        </t>
+
+                                    </ul>
+                                </div>
+
+                            </t>
+
                         </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_2.svg" /> </div>
-                            <h4>Поштова служба</h4>
-                            <ul>
-                                <li>Нова Пошта</li>
-                                <li>CAT</li>
-                            </ul>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_3.svg" /> </div>
-                            <h4>Курс валют</h4>
-                            <ul>
-                                <li>НБУ</li>
-                                <li>Monobank</li>
-                            </ul>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_5.svg" /> </div>
-                            <h4>Проєкт та аналітика</h4>
-                            <ul>
-                                <li>Jira</li>
-                                <li>Confluence</li>
-                                <li>Google Analytics</li>
-                                <li>Google Sheets</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="items-list-column">
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_6.svg" /> </div>
-                            <h4>Телефонія</h4>
-                            <ul>
-                                <li>Binotel</li>
-                                <li>Phonet</li>
-                                <li>Ringostat</li>
-                                <li>Kyivstar</li>
-                                <li>Задарма</li>
-                            </ul>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_7.svg" /> </div>
-                            <h4>Банки</h4>
-                            <ul>
-                                <li>Приват Банк</li>
-                                <li>Monobank</li>
-                                <li>з іншими банками (імпорт виписок)</li>
-                            </ul>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_8.svg" /> </div>
-                            <h4>Платіжний еквайринг</h4>
-                            <ul>
-                                <li>LiqPay</li>
-                                <li>WayforPay</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="items-list-column">
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_9.svg" /> </div>
-                            <h4>Комунікація</h4>
-                            <ul>
-                                <li>Viber</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                                <li>Telegram</li>
-                                <li>Chatbot Builder</li>
-                                <li>Addon</li>
-                                <li>Turbosms</li>
-                            </ul>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_10.svg" /> </div>
-                            <h4>Маркетплейс</h4>
-                            <ul>
-                                <li>Хорошоп</li>
-                                <li>prom.ua</li>
-                                <li>modnakasta</li>
-                                <li>rozetka.ua</li>
-                            </ul>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="img-wrapper"> <img src="/helloworld_module/static/src/img/main_page/fourth_section/fourth_section_10.svg" /> </div>
-                            <h4>Бухгалтерська програма</h4>
-                            <ul>
-                                <li>BAS</li>
-                                <li>M.E.Doc</li>
-                            </ul>
-                        </div>
-                    </div>
+
+                    </t>
+                    
                 </div>
             </div>
         </section>

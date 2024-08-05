@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_7" model="blog.post">
+            <field name="name">
+                Odoo Experience 2023
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_6"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2023-11-22'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_1'), ref('blog_tag_2'), ref('blog_tag_6'), ref('blog_tag_7')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_27/main_img.png')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            Участь в Odoo Experience 2023 
+                        </h1>
+
+                        <p class="capitalize">
+                            Зовсім нещодавно відбулася одна з наймасштабніших подій року у сфері автоматизації на базі ERP Odoo - Конференція <a href="https://www.odoo.com/uk_UA/event/odoo-experience-2023-3735/page/oxp23-introduction">“Odoo Experience 2023”</a>. Конференція проходила в Брюсселі, Бельгія.
+                        </p>
+
+                        <p>
+                             Захід неймовірного масштабу, на який з’їхалися спеціалісти з усієї Європи, де протягом 3 днів отримували масу корисної та нової інформації стосовно нововведень в систему. Головною темою івенту був вихід нової, 17 версії <a href="/blog/odoo-5/shcho-take-odoo-14">Odoo</a>.
+                        </p>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_27/img_1.jpg"/>
+
+                        <p>
+                            Так, все вірно - команда розробників, яка і є організатором івенту, провела щорічну презентацію, де розповіла про те, над чим працювала цілий рік і які якісно нові функції з’явилися в ERP Бельгійського походження.
+                        </p>
+
+                        <p>
+                            З гордістю повідомляємо вам про те, що ми відвідали цей івент і зовсім незабаром розповімо вам, що нового в 17 версії Odoo і чим вона відрізняється від попередньої, тож уважно слідкуйте за нашим сайтом, розділом <a href="/blog">“Блог”</a>, щоб не пропустити багато цікавих матеріалів.
+                        </p>
+
+                        <p>
+                            Окрім презентації 17 версії Odoo ERP було представлено інтеграції системи зі штучним інтелектом, зокрема Chat GPT, та ще однією технологією, яка здатна створювати автоматичні вхідні документи на підставі сканованих зображень рахунків отриманих від постачальника абощо, месенджером WhatsApp.
+                        </p>
+
+                        <p>
+                            Також мова йшла про вдосконалену організацію електронного документообігу в системі, для цього були додані відповідні функції та модулі.
+                        </p>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_27/img_2.jpg"/>
+
+                        <p>
+                            Після презентації всіх новинок - відбувся воркшоп, що являв собою велику кількість різноманітних тематичних стендів, де можна було поставити будь-яке питання спеціалістам з команди розробки і аналітики Odoo і спробувати на практиці нові функції. Підсумовуючи, можемо сказати що ми в захваті від того, що відвідали цей захід.
+                        </p>
+
+                        <p>
+                            Незабаром ми опрацюємо всю інформацію, що отримали і почнемо впроваджувати цей досвід на практиці у співпраці з вами! ToDo - ваш надійний партнер у сфері автоматизації, який завжди намагається привнести щось нове й актуальне при взаємодії з нашими клієнтами та партнерами. 
+                        </p>
+
+                        <p>
+                            Слідкуйте за новинами на нашому сайті в розділі <a href="/blog">“Блог”</a>, щоб не пропустити цікаві інстайти зі світу IT!
+                        </p>
+
+                        <p>
+                            З будь-яких питань ви можете сконтактувати з нами, натиснувши кнопки під цією статтею.
+                        </p>
+
+                        <div class="action_btns">
+                            <button id="get-presentation-btn" class="btn btn-primary" type="button">
+                                Замовити консультацію
+                            </button>
+                            <button id="get-demo-btn" class="btn btn-primary" type="button">
+                                Отримати демо
+                            </button>
+                        </div>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

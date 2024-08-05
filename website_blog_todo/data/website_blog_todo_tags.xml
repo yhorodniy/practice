@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- TAGS -->
+        <record id="blog_tag_1" model="blog.tag">
+            <field name="name">ERP</field>
+        </record>
+        <record id="blog_tag_2" model="blog.tag">
+            <field name="name">Odoo</field>
+        </record>
+        <record id="blog_tag_3" model="blog.tag">
+            <field name="name">Вебінари</field>
+        </record>
+        <record id="blog_tag_4" model="blog.tag">
+            <field name="name">Кейси і відгуки</field>
+        </record>
+        <record id="blog_tag_5" model="blog.tag">
+            <field name="name">Маркетинг</field>
+        </record>
+        <record id="blog_tag_6" model="blog.tag">
+            <field name="name">Новини</field>
+        </record>
+        <record id="blog_tag_7" model="blog.tag">
+            <field name="name">Про ToDo</field>
+        </record>
+        <record id="blog_tag_8" model="blog.tag">
+            <field name="name">Продажі та CRM</field>
+        </record>
+        <record id="blog_tag_9" model="blog.tag">
+            <field name="name">Продуктивність</field>
+        </record>
+
+    </data>
+</odoo>

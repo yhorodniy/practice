@@ -4,13 +4,14 @@
     'author': 'Your Name',
     'description': 'My custom website for Odoo',
     'category': 'Website',
-    'depends': ['website', 'snippets_library'],
+    'depends': ['website', 'crm'],
     'data': [
         'views/head.xml',
         'views/snippets/helpers/s_dialog_form.xml',
         'views/snippets/helpers/s_contact_us_section.xml',
         'views/snippets/helpers/s_contact_modal.xml',
-        
+        'views/snippets/helpers/s_callback_modal.xml',
+                
         'views/snippets/homepage/s_homepage_first_section.xml',
         'views/snippets/homepage/s_homepage_second_section.xml',
         'views/snippets/homepage/s_homepage_third_section.xml',
@@ -55,9 +56,9 @@
     'assets': {
         'web.assets_frontend': [
             'helloworld_module/static/src/scss/helpers/theme_style.scss',
-            # 'helloworld_module/static/src/scss/style.scss',
             'helloworld_module/static/src/scss/helpers/_variables.scss',
             'helloworld_module/static/src/scss/helpers/_mixins.scss',
+            'helloworld_module/static/src/scss/header-footer.scss',
             'helloworld_module/static/src/scss/helpers/contact_us_section.scss',
             'helloworld_module/static/src/scss/helpers/dialog_modal_form.scss',
             'helloworld_module/static/src/scss/index.scss',

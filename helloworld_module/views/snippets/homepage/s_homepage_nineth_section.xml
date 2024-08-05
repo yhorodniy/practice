@@ -9,7 +9,7 @@
                 </svg>
             </div>
 
-            <div t-att-style="'background-image: url(' + contact_us_bg + ');'" class="bg_contact_us_section">
+            <div style="background-image: url('/helloworld_module/static/src/img/main_page/nineth_section/nineth_section_bg.png');" class="bg_contact_us_section">
                 <t t-call="helloworld_module.s_contact_us_section" />
             </div>
             

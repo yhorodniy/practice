@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record>
+
+        <record id="blog_comment_2" model="mail.message">
+            <field name="body">Hi! How long did you stay there?</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record>
+
+        <record id="blog_comment_3" model="mail.message">
+            <field name="body">I'll follow your instructions next time! It will save myself from a weird place like last time :D</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_3"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record>
+
+        <record id="blog_comment_4" model="mail.message">
+            <field name="body">Can't wait to buy a telescope!</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_5"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record>
+
+        <record id="blog_comment_5" model="mail.message">
+            <field name="body">Light pollution can be really annoying when you want to observe the sky. The best places are far from cities. That's why I like to go camping.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_5"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record>
+
+        <record id="blog_comment_6" model="mail.message">
+            <field name="body">Great article! Do you have any good addresses to buy a telescope? Thanks!</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_6"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record>
+
+        <record id="blog_comment_7" model="mail.message">
+            <field name="body">Great article. I learned so much about astronomy and the moon. How can I contact you to discuss about my experience?</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_7"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>

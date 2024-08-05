@@ -1,40 +1,24 @@
 <odoo>
     <data>
-
-        <!-- <record id="main_menu" model="website.menu">
-            <field name="name">Default Main Menu</field>
-            <field name="url">/default-main-menu</field>
-            <field name="website_id" ref="helloworld_module.default_website"/>
-        </record> -->
-
-        <!-- <record id="menu_homepage" model="website.menu">
-            <field name="name">Home</field>
-            <field name="url">/</field>
-            <field name="page_id" ref="helloworld_module.y_h_hw_homepage"/>
-            <field name="parent_id" ref="helloworld_module.main_menu"/>
-        </record> -->
-
-        <!-- <record id="menu_aboutus" model="website.menu">
-            <field name="name">About Us</field>
-            <field name="url">/aboutus</field>
-            <field name="page_id" ref="helloworld_module.about_us_page"/>
-            <field name="parent_id" ref="helloworld_module.main_menu"/>
-        </record> -->
-        <delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]" />
         
-        <record id="menu_aboutus" model="website.menu">
+        <record id="menu_modules" model="website.menu">
             <field name="name">Модулі</field>
             <field name="url">/modules</field>
         </record>
 
-        <record id="menu_aboutus" model="website.menu">
+        <record id="menu_integrations" model="website.menu">
             <field name="name">Інтеграції</field>
             <field name="url">/#integrations</field>
         </record>
 
-        <record id="menu_aboutus" model="website.menu">
+        <record id="menu_cases" model="website.menu">
             <field name="name">Кейси</field>
             <field name="url">/#cases</field>
+        </record>
+
+        <record id="menu_contacts" model="website.menu">
+            <field name="name">Контакти</field>
+            <field name="url">/contacts</field>
         </record>
 
     </data>

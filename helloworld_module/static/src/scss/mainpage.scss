@@ -67,6 +67,23 @@
 }
 
 
+// Third section
+
+.third_section_processes_row_list {
+    @include flexcenter($justify-content:space-between,$align-atems:flex-start);
+    gap: 50px;
+    margin-top: 1rem;
+
+    & > div {
+        width: 100%;
+
+        & > div {
+            @include flexcenter($justify-content:space-around);
+        }
+    }
+}
+
+
 // Fourth section
 
 .fourth-section-bg {
@@ -79,11 +96,12 @@
 
     & h2 {
         color: $white;
+        line-height: 4rem;
     }
 
     & .items-list-wrapper {
         @include flexcenter($align-atems: flex-start);
-        gap: 30px;
+        gap: 50px;
 
         & .items-list-column {
             @include flexcenter($flex-direction: column);
@@ -91,7 +109,7 @@
 
             & .item-wrapper {
                 width: 260px;
-                padding: 30px 15px;
+                padding: 30px 10px 30px 30px;
                 background-color: $white;
                 border-radius: $card-border-radius;
 
@@ -106,10 +124,12 @@
 
                 & h4 {
                     color: $main-color;
-                    font-size: $fsz-key-text;
                     font-weight: $fw-bold;
-                    text-align: center;
                     margin-bottom: 1.25rem;
+                }
+
+                & li {
+                    list-style-type: disc;
                 }
             }
         }
@@ -137,6 +157,59 @@
 
 // Sixth section
 
+.dialog_item {
+    position: relative;
+    max-width: 80%;
+    height: 0px;
+    color: $black;
+    background-color: $white;
+    display: none;
+    opacity: 0;
+    gap: 50px;
+    border-radius: $background-border-radius;
+    text-align: justify !important;
+    transition: all .3s;
+
+    & #close-btn {
+        border: 1px solid $main-color;
+        border-radius: 50%;
+        background-color: $black;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    &.content_active {
+        @include flexcenter($justify-content:space-between);
+        height: 850px;
+        opacity: 1;
+
+        & img {
+            height: 850px;
+            border-radius: $background-border-radius;
+        }
+    }
+
+    & .dialog_item_content {
+        padding: 70px;
+        line-height: 2rem !important;
+        overflow: hidden;
+
+        & h4 {
+            font-weight: $fw-medium;
+            margin-bottom: 20px;
+        }
+
+        & p, & li {
+            font-size: $fsz-text;
+        }
+
+        & li {
+            list-style-type: disc;
+        }
+    }
+}
+
 .sixth_section_items_wrapper {
     height: 100%;
     margin-top: 30px;
@@ -161,7 +234,7 @@
             border-radius: 0 0 $background-border-radius 0;
         }
     
-        & div {
+        & .sixth_section_content {
             position: absolute;
             top: 0;
             left: 0;
@@ -188,7 +261,7 @@
             }
 
         }
-        &:hover div {
+        &:hover .sixth_section_content {
             opacity: 1;
         }
     }

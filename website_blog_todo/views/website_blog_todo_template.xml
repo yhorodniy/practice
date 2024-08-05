@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    
+
+    <template id="blog_post_todo_complete" inherit_id="website_blog.blog_post_complete">
+        <xpath expr="//div[@id='title']" position="replace">
+            <div id="title" class="blog_header" t-ignore="True">
+                <t t-call="website.record_cover">
+                    <t t-set="_record" t-value="blog_post"/>
+                    <t t-set="snippet_autofocus" t-value="True"/>
+                    <t t-set="use_size" t-value="True"/>
+                    <t t-set="display_opt_name">Blog Post Cover</t>
+                    <t t-set="additionnal_classes" t-value="'o_wblog_post_page_cover'"/>
+
+                    <div class="container text-center position-relative h-100 d-flex flex-column flex-grow-1 justify-content-around">
+                        <t t-set="resize_classes" t-value="set(json.loads(_record.cover_properties).get('resize_class', '').split(' '))"/>
+                        <a t-if="{'o_full_screen_height', 'o_half_screen_height', 'cover_full', 'cover_mid'}.intersection(resize_classes)"
+                            id="o_wblog_post_content_jump" href="#o_wblog_post_main"
+                            class="css_editable_mode_hidden justify-content-center align-items-center rounded-circle mx-auto mb-5 text-decoration-none">
+                            <i class="fa fa-angle-down fa-3x" aria-label="To blog content" title="To blog content"/>
+                        </a>
+                    </div>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="blog_post_todo_footer" inherit_id="website_blog.opt_blog_post_read_next">
+        <xpath expr="//div[@id='o_wblog_next_container']" position="replace">
+            <div id="o_wblog_next_container" class="d-flex flex-column" t-cache="next_post">
+                <t t-call="website.record_cover">
+                    <t t-set="_record" t-value="next_post"/>
+                    <t t-set="_cp" t-value="json.loads(_record.cover_properties)"/>
+                    <t t-set="use_size" t-value="True"/>
+                    <t t-set="additionnal_classes" t-value="'o_wblog_post_page_cover o_wblog_post_page_cover_footer o_record_has_cover'"/>
+
+                    <a id="o_wblog_next_post_info" class="d-none"
+                       t-att-data-size="_cp.get('resize_class')"
+                       t-att-data-url="'/blog/' + slug(next_post.blog_id) + '/' + slug(next_post) + '?anim'"/>
+
+                    <t t-set="next_cover_is_full" t-value="bool({'o_full_screen_height', 'cover_full'}.intersection(_cp.get('resize_class', '').split(' ')))"/>
+                    <t t-set="next_cover_is_auto" t-value="'cover_auto' in _cp.get('resize_class', '')"/>
+
+                    <div class="container text-center position-relative h-100 d-flex flex-column flex-grow-1 justify-content-around">
+
+                        <div t-attf-class="o_wblog_toggle #{next_cover_is_full and 'mb-n5'}">
+                            <span class="h4 d-inline-block py-1 px-2 rounded-1 next_btn">
+                                <i class="fa fa-angle-right fa-3x" aria-label="Read next" title="Read Next"/>
+                            </span>
+                        </div>
+
+                        <!-- Emulate the next post's cover's height. For non-auto covers,
+                        the room that will be occupied by the 'scroll-down' link is temporary
+                        occupied  by the loader circle. For auto covers, an empty <div>
+                        creates enought separation.
+                        -->
+                        <div t-if="not next_cover_is_auto" class="o_wblog_next_loader o_wblog_toggle justify-content-center align-items-center mx-auto position-relative d-none">
+                            <div class="rounded-circle bg-black-50"/>
+                        </div>
+                        <div t-else="" class="o_wblog_next_fake_btn d-flex o_wblog_toggle"/>
+                    </div>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</odoo>

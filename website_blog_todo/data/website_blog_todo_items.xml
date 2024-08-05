@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        
+        <record id="blog_blog_1" model="blog.blog">
+            <field name="name">ERP</field>
+            <field name="subtitle">В основі ERP-системи лежит єдина база даних, в якій зберігається вся інформація про деяльність компанії</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/erp_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_2" model="blog.blog">
+            <field name="name">Odoo</field>
+            <field name="subtitle">Весь ваш бізнес на одній платформі</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/odoo_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_3" model="blog.blog">
+            <field name="name">Вебінари</field>
+            <field name="subtitle">Наші вебінари</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/webinar_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_4" model="blog.blog">
+            <field name="name">Кейси і відгуки</field>
+            <field name="subtitle">Наші клієнти задоволення співпрацею</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/cases_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_5" model="blog.blog">
+            <field name="name">Маркетинг</field>
+            <field name="subtitle">Ми знаємо, як підвищити впізнаванність товару чи послуги</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/marketing_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_6" model="blog.blog">
+            <field name="name">Новини</field>
+            <field name="subtitle">Наші впровадження та участі в івентах</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/news_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_7" model="blog.blog">
+            <field name="name">Про ToDo</field>
+            <field name="subtitle">Наші впровадження та участі в івентах</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/news_img.jpg')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_8" model="blog.blog">
+            <field name="name">Продажі та CRM</field>
+            <field name="subtitle">Автоматизовуємо рутинні процеси</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/crm_img.webp')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+        <record id="blog_blog_9" model="blog.blog">
+            <field name="name">Продуктивність</field>
+            <field name="subtitle">Автоматизовуємо рутинні процеси</field>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/productivity_img.png')",
+                    "resize_class": "o_record_has_cover o_half_screen_height",
+                    "opacity": "0.4"
+                }
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,123 @@
+.next_btn {
+    color: #FE5000;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(50%)
+}
+
+.quote_container {
+    padding: 70px 0;
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        background: url("/website_blog_todo/static/img/post_31/ux.png") no-repeat center center;
+        background-size: 100%;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &::before {
+        right: 0;
+        top: 1rem;
+    }
+
+    &::after {
+        left: 0;
+        bottom: 1rem;
+        transform: rotateY(180deg);
+    }
+
+    & p {
+        font-weight: 500;
+        padding: 0 100px;
+    }
+}
+
+.action_btns {
+    & .btn {
+        transform: scale(0.7);
+        margin: 50px 0;
+    }
+}
+
+.o_wblog_post_content_field {
+    color: #000;
+
+    & h1 {
+        font-size: 4rem !important;
+        font-weight: 500;
+        margin: 60px 0;
+    }
+
+    & h2 {
+        font-size: 2.5rem !important;
+        font-weight: 500;
+        margin: 40px 0 20px 0;
+    }
+
+    & p {
+        margin: 20px 0;
+        text-align: justify;
+        line-height: 2.5rem;
+        font-size: 1.25rem;
+
+        &.capitalize::first-letter {
+            font-size: 4rem;
+            font-weight: 500;
+        }
+    }
+
+    & a {
+        color: #FE5000;
+        transition: all .3s;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #FE5000;
+            padding-bottom: 2px;
+        }
+    }
+
+    & img {
+        margin: 40px auto;
+        width: 50%;
+    }
+
+    & ol {
+        list-style-type: decimal;
+    }
+
+    & li {
+        list-style-type: inherit;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        margin-left: 20px;
+    }   
+}
+
+#o_wblog_post_content_jump {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FE5000;
+}
+
+#o_wblog_posts_loop .row div:hover .o_record_cover_image {
+    background-size: contain;
+}
+
+@keyframes o-anim-heartbeat {
+    0%, 20%, 40% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(1.3);
+        color: #FFF;
+        background-color: #FE5000;
+    }
+    70% {
+        background-color: rgba(0, 0, 0, 0);
+        color: #FE5000;
+    }
+}

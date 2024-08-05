@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- POSTS -->
+        <record id="blog_post_21" model="blog.post">
+            <field name="name">
+                Odoo, BAS і 1C
+            </field>
+            <!-- <field name="subtitle">An exciting mix of relaxation, culture, history, wildlife and hiking.</field> -->
+            <field name="blog_id" ref="website_blog_todo.blog_blog_3"/>
+            <field name="author_id" ref="base.partner_admin"/>
+            <field name="is_published" eval="True"/>
+            <field name="published_date" eval="'2024-04-18'"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('blog_tag_1'), ref('blog_tag_2'), ref('blog_tag_3'), ref('blog_tag_6')])]"/>
+            <field name="cover_properties">
+                {
+                    "background-image": "url('/website_blog_todo/static/img/post_13/main_img.png')",
+                    "resize_class": "o_half_screen_height",
+                    "opacity": "0"
+                }
+            </field>
+            <field name="content">
+                <![CDATA[
+                    <div class="mt72 mb40">
+
+                        <h1>
+                            Вебінар про порівняння Odoo, BAS і 1С – як це було 
+                        </h1>
+
+                        <p class="capitalize">
+                            17.04.2024 відбувся наш безкоштовний вебінар на тему: «Сильні та слабкі сторони <a href="/about-odoo">Odoo</a> в порівнянні з 1С, BAS на думку 1С-ка з 20-річним досвідом», спікером якого був наш засновник та директор - Олексій Бардаков.
+                        </p>
+
+                        <img class="mx-auto mt40 mb40" src="/website_blog_todo/static/img/post_13/img_1.png"/>
+
+                        <p>
+                            По-перше, хочемо подякувати всім за реєстрацію та присутність на трансляції. 
+                        </p>
+
+                        <p>
+                            Також вдячні всім за активну взаємодію зі спікером, хочемо відмітити актуальність поставлених глядачами запитань, що стосувалися: сумісності Odoo з іншими <a href="/">ERP системами</a> автоматизації, її інтеграції з 1С, BAS; можливостей конструктора бізнес-процесів в Odoo; наявності модуля казначейства в Odoo та багато чого іншого. 
+                        </p>
+
+                        <p>
+                            Їх було настільки багато, що описати всі ми просто не маємо змоги. Якщо вже так сталося, що цього разу ви не змогли задати питання, що вас цікавить — обов’язково приходьте на наші наступні вебінари й будьте певні, що у вас буде така можливість!
+                        </p>
+
+                        <p>
+                            Слідкуйте за нами в соцмережах, щоб не пропустити анонс дати нового вебінару (посилання на всі наші медіа — в кінці новини)!
+                        </p>
+
+                        <p>
+                            Після цікавої Q&A сесії Олексій озвучив подарунки усім зареєстрованим, серед яких були:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Тест “Чи готові ви до ERP?”, після проходження якого можна отримати не лише оцінку готовності підприємства до автоматизації, а й рекомендації щодо подальших дій від наших експертів.
+                            </li>
+                            <li>
+                                Сертифікат на індивідуальну годину безкоштовної консультації з Олексієм Бардаковим.
+                            </li>
+                            <li>
+                                Грошовий бонус від нашого партнера Ringostat.
+                            </li>
+                            <li>
+                                Знижка на передпроєктне дослідження для членів СУП, Укрлегпром, YBC та УАМ.
+                            </li>
+                        </ul>
+
+                        <p>
+                            Загальна кількість зареєстрованих учасників сягнула майже 200 людей, серед яких було багато представників товарного, меблевого, IT, консалтингового та багатьох інших видів бізнесу, що ще раз доводить факт актуальності теми автоматизації для більшості українських підприємців.
+                        </p>
+
+                        <p>
+                            Якщо у вас є пропозиції щодо наших майбутніх тем та форматів корисного та практичного контенту — пишіть із запитом на <a href="mailto:marketing@todo.ltd">marketing@todo.ltd</a>, будемо раді розглянути будь-які ідеї.
+                        </p>
+
+                        <p>
+                            А ще — ми вже готуємо наступний вебінар, тож слідкуйте за нами на наших офіційних сторінках в <a href="https://www.facebook.com/ToDo.LTD/">Facebook</a>, <a href="https://www.linkedin.com/company/todo-ltd/">LinkedIn</a> й на <a href="https://www.youtube.com/channel/UC0NexR-N6kQKO7U2zSN4_8g">YouTube</a>, щоб бути в колі перших, хто дізнається про наші новини та анонси!
+                        </p>
+
+                        <p>
+                            До нових зустрічей! 
+                        </p>
+
+                        <div class="action_btns">
+                            <button id="get-presentation-btn" class="btn btn-primary" type="button">
+                                Замовити консультацію
+                            </button>
+                            <button id="get-demo-btn" class="btn btn-primary" type="button">
+                                Отримати демо
+                            </button>
+                        </div>
+                    </div>
+                ]]>
+            </field>
+        </record>
+
+        <!-- <record id="blog_comment_1" model="mail.message">
+            <field name="body">Beautiful! I plan to go there next holidays.</field>
+            <field name="model">blog.post</field>
+            <field name="res_id" ref="blog_post_1"/>
+            <field name="message_type">comment</field>
+            <field name="author_id" ref="base.partner_demo_portal"/>
+            <field name="subtype_id" ref="mail.mt_comment"/>
+        </record> -->
+
+    </data>
+</odoo>
